@@ -10,6 +10,8 @@ import Foundation
 
 struct CategoriesService: Service {
     static func load<String>() -> [String] {
-        return []
+        let data = try! MockData.load(name: "Categories")
+        let categories = try! JSONSerialization.jsonObject(with: data!, options: []) as! [String]
+        return categories
     }
 }
