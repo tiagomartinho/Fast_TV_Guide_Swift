@@ -36,6 +36,8 @@
 		AFE422E81FDDB14200704919 /* ChannelsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422E71FDDB14200704919 /* ChannelsServiceTests.swift */; };
 		AFE422EA1FDDB32F00704919 /* HighlightsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422E91FDDB32F00704919 /* HighlightsTests.swift */; };
 		AFE422EC1FDDB78800704919 /* CategoriesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422EB1FDDB78800704919 /* CategoriesServiceTests.swift */; };
+		AFE422F01FDDE3AA00704919 /* ProgramsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422EF1FDDE3AA00704919 /* ProgramsParser.swift */; };
+		AFE422F21FDDEC1A00704919 /* ProgramsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422F11FDDEC1A00704919 /* ProgramsServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		AFE422E71FDDB14200704919 /* ChannelsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsServiceTests.swift; sourceTree = "<group>"; };
 		AFE422E91FDDB32F00704919 /* HighlightsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsTests.swift; sourceTree = "<group>"; };
 		AFE422EB1FDDB78800704919 /* CategoriesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesServiceTests.swift; sourceTree = "<group>"; };
+		AFE422EF1FDDE3AA00704919 /* ProgramsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsParser.swift; sourceTree = "<group>"; };
+		AFE422F11FDDEC1A00704919 /* ProgramsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsServiceTests.swift; sourceTree = "<group>"; };
 		E6289AC563357779A435F4AB /* Pods-Fast TV Guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fast TV Guide.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fast TV Guide/Pods-Fast TV Guide.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +166,7 @@
 				AFE422E71FDDB14200704919 /* ChannelsServiceTests.swift */,
 				AFE422E91FDDB32F00704919 /* HighlightsTests.swift */,
 				AFE422EB1FDDB78800704919 /* CategoriesServiceTests.swift */,
+				AFE422F11FDDEC1A00704919 /* ProgramsServiceTests.swift */,
 			);
 			path = "Fast TV GuideTests";
 			sourceTree = "<group>";
@@ -205,8 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				AFE422D21FDD4DB000704919 /* Service.swift */,
-				AFE422C61FDD479700704919 /* ChannelsService.swift */,
 				AFE422C81FDD47B000704919 /* ProgramsService.swift */,
+				AFE422C61FDD479700704919 /* ChannelsService.swift */,
 				AFE422D01FDD4D8B00704919 /* HighlightsService.swift */,
 				AFE422D41FDD4F3900704919 /* CategoriesService.swift */,
 			);
@@ -258,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				AFE422E31FDD9BDA00704919 /* ChannelsParser.swift */,
+				AFE422EF1FDDE3AA00704919 /* ProgramsParser.swift */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -442,6 +448,7 @@
 				AFE422BA1FDD467200704919 /* AppController.swift in Sources */,
 				AFE422D11FDD4D8B00704919 /* HighlightsService.swift in Sources */,
 				AFE422BE1FDD468900704919 /* AppData.swift in Sources */,
+				AFE422F01FDDE3AA00704919 /* ProgramsParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +460,7 @@
 				AFE422E81FDDB14200704919 /* ChannelsServiceTests.swift in Sources */,
 				AFE422EA1FDDB32F00704919 /* HighlightsTests.swift in Sources */,
 				AFE422EC1FDDB78800704919 /* CategoriesServiceTests.swift in Sources */,
+				AFE422F21FDDEC1A00704919 /* ProgramsServiceTests.swift in Sources */,
 				AFE422AD1FDD362900704919 /* Fast_TV_GuideTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

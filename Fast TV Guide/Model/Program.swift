@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-struct Program {
+struct Program: Mappable {
     var identifier: String?
     var start: Double?
     var end: Double?
