@@ -34,6 +34,7 @@
 		AFE422E41FDD9BDA00704919 /* ChannelsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422E31FDD9BDA00704919 /* ChannelsParser.swift */; };
 		AFE422E61FDD9DF400704919 /* ChannelsParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422E51FDD9DF400704919 /* ChannelsParserTests.swift */; };
 		AFE422E81FDDB14200704919 /* ChannelsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422E71FDDB14200704919 /* ChannelsServiceTests.swift */; };
+		AFE422EA1FDDB32F00704919 /* HighlightsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422E91FDDB32F00704919 /* HighlightsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		AFE422E31FDD9BDA00704919 /* ChannelsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsParser.swift; sourceTree = "<group>"; };
 		AFE422E51FDD9DF400704919 /* ChannelsParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsParserTests.swift; sourceTree = "<group>"; };
 		AFE422E71FDDB14200704919 /* ChannelsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsServiceTests.swift; sourceTree = "<group>"; };
+		AFE422E91FDDB32F00704919 /* HighlightsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsTests.swift; sourceTree = "<group>"; };
 		E6289AC563357779A435F4AB /* Pods-Fast TV Guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fast TV Guide.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fast TV Guide/Pods-Fast TV Guide.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 				AFE422AE1FDD362900704919 /* Info.plist */,
 				AFE422E51FDD9DF400704919 /* ChannelsParserTests.swift */,
 				AFE422E71FDDB14200704919 /* ChannelsServiceTests.swift */,
+				AFE422E91FDDB32F00704919 /* HighlightsTests.swift */,
 			);
 			path = "Fast TV GuideTests";
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 			files = (
 				AFE422E61FDD9DF400704919 /* ChannelsParserTests.swift in Sources */,
 				AFE422E81FDDB14200704919 /* ChannelsServiceTests.swift in Sources */,
+				AFE422EA1FDDB32F00704919 /* HighlightsTests.swift in Sources */,
 				AFE422AD1FDD362900704919 /* Fast_TV_GuideTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

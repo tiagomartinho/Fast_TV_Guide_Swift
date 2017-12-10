@@ -9,7 +9,7 @@
 import Foundation
 
 struct CategoriesService: Service {
-    func load<String>() -> [String] {
+    static func load<String>() -> [String] {
         return []
     }
 }
