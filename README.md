@@ -1,10 +1,10 @@
-# Fast_TV_Guide_Swift
+# Fast TV Guide
 
-This is a demo app to show the use of the MVPAC architecture patterns - (Model-View-Presenter-Action-Coordinator)
+This is a demo app to show the use of the MVPAC architecture patterns - (Model-View-Presenter with Action and Co-ordinator)
 
 It uses simplied fixed data from a TV guide as the model.
 
-# Outline of the app
+# Outline
 
 It has 4 tabs: highlights, channels, movies, categories. 
 
@@ -24,15 +24,36 @@ Presenter
 ViewController
 DataSource
 Delegate
-Cell 
+Cells 
+Actionable
 
-A Wireframe is a struct that follows conventions: 
+## Wireframe
+A Wireframe is a struct that follows certain conventions: 
 
 - It contains at least one factory method that starts with "make". 
 
 - It contains a "prepare" function that injects objects into the module, and connects all the objects together. 
 
-The presenter class implements all the code for presenting the data in the view controller. This can include string formatting, parsing objects, receiving notifications. 
+## Presenter
+The presenter class implements all the code for presenting the data in the view controller. This can include string formatting, parsing objects, receiving notifications
 
- 
+It also handles actions in the view controller such as buttons, taps, swipes etc. 
+
+It communicates back to the coordinator using an Actionable protocol. 
+
+## View Controller
+This is no different to a view controller in any other app.  
+
+## DataSource
+This is no different to the usual data source for a table or collection view. 
+
+## Delegate
+This is no different from the usual delegate for a table or collection view. 
+
+## Cells
+The customs cells for the table or collection view.
+
+## Actionable
+An extension of AppController that implements the relevant calls from the presenter. 
+
 
