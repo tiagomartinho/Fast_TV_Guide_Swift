@@ -118,7 +118,7 @@
          "channelId":"ARD",
          "subTitle":"Obdachlos",
          "genre":"Kinderserie",
-         "category":"",
+         "category":"Serien",
          "title":"Die Pfefferk\u00f6rner"
       },
       {
@@ -129,7 +129,7 @@
          "channelId":"ARD",
          "subTitle":"Alarm in der Schule",
          "genre":"Kinderserie",
-         "category":"",
+         "category":"Serien",
          "title":"Die Pfefferk\u00f6rner"
       },
       {
@@ -140,7 +140,7 @@
          "channelId":"ARD",
          "subTitle":"HipHop",
          "genre":"Kinderserie",
-         "category":"",
+         "category":"Serien",
          "title":"Die Pfefferk\u00f6rner"
       },
       {
@@ -478,7 +478,7 @@
          "title":"Brisant"
       },
       {
-         "recordId":"mp-GDM111490781",
+         "recordId":"1490781",
          "start":1510977000,
          "end":1510979400,
          "min":40,
@@ -491,7 +491,7 @@
    ],
    "ZDF":[
       {
-         "recordId":"mp-GDM111490528",
+         "recordId":"1490528",
          "start":1510978800,
          "end":1510979700,
          "min":15,
@@ -502,7 +502,7 @@
          "title":"Leute heute"
       },
       {
-         "recordId":"mp-GDM112122283",
+         "recordId":"2122283",
          "start":1510979700,
          "end":1510981200,
          "min":25,
@@ -513,7 +513,7 @@
          "title":"Ready for this - Die Chance deines Lebens"
       },
       {
-         "recordId":"mp-GDM112122288",
+         "recordId":"2122288",
          "start":1510981200,
          "end":1510982700,
          "min":25,
@@ -524,7 +524,7 @@
          "title":"L\u00f6wenzahn"
       },
       {
-         "recordId":"mp-GDM112122295",
+         "recordId":"2122295",
          "start":1510982700,
          "end":1510984200,
          "min":25,
@@ -535,7 +535,7 @@
          "title":"pur+"
       },
       {
-         "recordId":"mp-GDM112122305",
+         "recordId":"2122305",
          "start":1510984200,
          "end":1510985400,
          "min":20,
@@ -546,7 +546,7 @@
          "title":"Peter Pan - Neue Abenteuer"
       },
       {
-         "recordId":"mp-GDM112122312",
+         "recordId":"2122312",
          "start":1510985400,
          "end":1510986600,
          "min":20,
@@ -557,7 +557,7 @@
          "title":"Peter Pan - Neue Abenteuer"
       },
       {
-         "recordId":"mp-GDM112122294",
+         "recordId":"2122294",
          "start":1510986600,
          "end":1510988100,
          "min":25,
@@ -568,7 +568,7 @@
          "title":"Sieben Zwerge & ich"
       },
       {
-         "recordId":"mp-GDM112122301",
+         "recordId":"2122301",
          "start":1510988100,
          "end":1510989600,
          "min":25,
@@ -579,7 +579,7 @@
          "title":"1, 2 oder 3"
       },
       {
-         "recordId":"mp-GDM112122309",
+         "recordId":"2122309",
          "start":1510989600,
          "end":1510991100,
          "min":25,
@@ -590,7 +590,7 @@
          "title":"Bibi Blocksberg"
       },
       {
-         "recordId":"mp-GDM112122316",
+         "recordId":"2122316",
          "start":1510991100,
          "end":1510991400,
          "min":5,
@@ -601,7 +601,7 @@
          "title":"heute Xpress"
       },
       {
-         "recordId":"mp-GDM112122321",
+         "recordId":"2122321",
          "start":1510991400,
          "end":1510992900,
          "min":25,
@@ -612,7 +612,7 @@
          "title":"Bibi und Tina"
       },
       {
-         "recordId":"mp-GDM112122289",
+         "recordId":"2122289",
          "start":1510992900,
          "end":1510994400,
          "min":25,
@@ -623,7 +623,7 @@
          "title":"Bibi und Tina"
       },
       {
-         "recordId":"mp-GDM112122296",
+         "recordId":"2122296",
          "start":1510994400,
          "end":1510995900,
          "min":25,
@@ -634,7 +634,7 @@
          "title":"Mia and me"
       },
       {
-         "recordId":"mp-GDM112122302",
+         "recordId":"2122302",
          "start":1510995900,
          "end":1510997100,
          "min":20,
@@ -645,7 +645,7 @@
          "title":"Mia and me"
       },
       {
-         "recordId":"mp-GDM112122311",
+         "recordId":"2122311",
          "start":1510997100,
          "end":1510997400,
          "min":5,
@@ -656,7 +656,7 @@
          "title":"heute Xpress"
       },
       {
-         "recordId":"mp-GDM112122318",
+         "recordId":"2122318",
          "start":1510997400,
          "end":1511000100,
          "min":45,
@@ -667,7 +667,7 @@
          "title":"Notruf Hafenkante"
       },
       {
-         "recordId":"mp-GDM112122298",
+         "recordId":"2122298",
          "start":1511000100,
          "end":1511002800,
          "min":45,
@@ -678,7 +678,7 @@
          "title":"SOKO Wismar"
       },
       {
-         "recordId":"mp-GDM112122306",
+         "recordId":"2122306",
          "start":1511002800,
          "end":1511003100,
          "min":5,
@@ -689,7 +689,7 @@
          "title":"heute Xpress"
       },
       {
-         "recordId":"mp-GDM112122313",
+         "recordId":"2122313",
          "start":1511003100,
          "end":1511003700,
          "min":10,
@@ -700,7 +700,7 @@
          "title":"Menschen - das Magazin"
       },
       {
-         "recordId":"mp-GDM112122317",
+         "recordId":"2122317",
          "start":1511003700,
          "end":1511006400,
          "min":45,
@@ -711,7 +711,7 @@
          "title":"Father Brown"
       },
       {
-         "recordId":"mp-GDM112122320",
+         "recordId":"2122320",
          "start":1511006400,
          "end":1511011500,
          "min":85,
@@ -723,7 +723,7 @@
          "releaseYear":2004
       },
       {
-         "recordId":"mp-GDM112122284",
+         "recordId":"2122284",
          "start":1511011500,
          "end":1511011800,
          "min":5,
@@ -734,7 +734,7 @@
          "title":"heute Xpress"
       },
       {
-         "recordId":"mp-GDM112122290",
+         "recordId":"2122290",
          "start":1511011800,
          "end":1511025000,
          "min":220,
@@ -745,7 +745,7 @@
          "title":"Sport extra Wintersport"
       },
       {
-         "recordId":"mp-GDM112122285",
+         "recordId":"2122285",
          "start":1511025000,
          "end":1511028000,
          "min":50,
@@ -756,7 +756,7 @@
          "title":"SOKO Wien"
       },
       {
-         "recordId":"mp-GDM112122293",
+         "recordId":"2122293",
          "start":1511028000,
          "end":1511029200,
          "min":20,
@@ -767,7 +767,7 @@
          "title":"heute"
       },
       {
-         "recordId":"mp-GDM112122304",
+         "recordId":"2122304",
          "start":1511029200,
          "end":1511029500,
          "min":5,
@@ -778,7 +778,7 @@
          "title":"Wetter"
       },
       {
-         "recordId":"mp-GDM112122319",
+         "recordId":"2122319",
          "start":1511029500,
          "end":1511032500,
          "min":50,
@@ -789,7 +789,7 @@
          "title":"Dr. Klein"
       },
       {
-         "recordId":"mp-GDM112122281",
+         "recordId":"2122281",
          "start":1511032500,
          "end":1511037900,
          "min":90,
@@ -801,7 +801,7 @@
          "releaseYear":2017
       },
       {
-         "recordId":"mp-GDM112122286",
+         "recordId":"2122286",
          "start":1511037900,
          "end":1511041500,
          "min":60,
@@ -812,7 +812,7 @@
          "title":"Der Kriminalist"
       },
       {
-         "recordId":"mp-GDM112122292",
+         "recordId":"2122292",
          "start":1511041500,
          "end":1511042400,
          "min":15,
@@ -823,7 +823,7 @@
          "title":"heute-journal"
       },
       {
-         "recordId":"mp-GDM112122300",
+         "recordId":"2122300",
          "start":1511042400,
          "end":1511047500,
          "min":85,
@@ -834,7 +834,7 @@
          "title":"Das aktuelle Sportstudio"
       },
       {
-         "recordId":"mp-GDM112122307",
+         "recordId":"2122307",
          "start":1511047500,
          "end":1511047800,
          "min":5,
@@ -845,7 +845,7 @@
          "title":"heute Xpress"
       },
       {
-         "recordId":"mp-GDM112122322",
+         "recordId":"2122322",
          "start":1511047800,
          "end":1511049600,
          "min":30,
@@ -856,7 +856,7 @@
          "title":"heute-show"
       },
       {
-         "recordId":"mp-GDM112122323",
+         "recordId":"2122323",
          "start":1511049600,
          "end":1511055900,
          "min":105,
@@ -868,7 +868,7 @@
          "releaseYear":2008
       },
       {
-         "recordId":"mp-GDM112122324",
+         "recordId":"2122324",
          "start":1511055900,
          "end":1511061600,
          "min":95,
@@ -880,7 +880,7 @@
          "releaseYear":2011
       },
       {
-         "recordId":"mp-GDM112122325",
+         "recordId":"2122325",
          "start":1511061600,
          "end":1511064300,
          "min":45,
@@ -891,7 +891,7 @@
          "title":"SOKO Leipzig"
       },
       {
-         "recordId":"mp-GDM111490527",
+         "recordId":"1490527",
          "start":1510976100,
          "end":1510978800,
          "min":45,
@@ -904,7 +904,7 @@
    ],
    "RTL":[
       {
-         "recordId":"mp-GDM111712386",
+         "recordId":"1712386",
          "start":1510977600,
          "end":1510980300,
          "min":45,
@@ -1091,7 +1091,7 @@
          "title":"Willkommen bei Mario Barth"
       },
       {
-         "recordId":"mp-GDM115706317",
+         "recordId":"5706317",
          "start":1511059500,
          "end":1511060400,
          "min":15,
@@ -1325,7 +1325,7 @@
          "releaseYear":2013
       },
       {
-         "recordId":"mp-GDM113459177",
+         "recordId":"3459177",
          "start":1511042100,
          "end":1511044500,
          "min":40,
@@ -1336,7 +1336,7 @@
          "title":"ran Fighting"
       },
       {
-         "recordId":"mp-GDM113459178",
+         "recordId":"3459178",
          "start":1511044500,
          "end":1511048100,
          "min":60,
@@ -1371,7 +1371,7 @@
          "releaseYear":2009
       },
       {
-         "recordId":"mp-GDM113459179",
+         "recordId":"3459179",
          "start":1511061300,
          "end":1511066100,
          "min":80,
@@ -1383,7 +1383,7 @@
          "releaseYear":2015
       },
       {
-         "recordId":"mp-GDM111691285",
+         "recordId":"1691285",
          "start":1510975800,
          "end":1510978800,
          "min":50,

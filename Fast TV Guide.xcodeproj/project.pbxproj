@@ -28,6 +28,8 @@
 		AFE422DA1FDD5A1E00704919 /* Programs.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422D81FDD5A1D00704919 /* Programs.json */; };
 		AFE422DC1FDD5A6B00704919 /* Channels.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422DB1FDD5A6B00704919 /* Channels.json */; };
 		AFE422DD1FDD5A6B00704919 /* Channels.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422DB1FDD5A6B00704919 /* Channels.json */; };
+		AFE422DF1FDD8E2800704919 /* Highlights.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422DE1FDD8E2800704919 /* Highlights.json */; };
+		AFE422E11FDD8E5500704919 /* Categories.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422E01FDD8E5500704919 /* Categories.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		AFE422D41FDD4F3900704919 /* CategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesService.swift; sourceTree = "<group>"; };
 		AFE422D81FDD5A1D00704919 /* Programs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Programs.json; sourceTree = "<group>"; };
 		AFE422DB1FDD5A6B00704919 /* Channels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Channels.json; sourceTree = "<group>"; };
+		AFE422DE1FDD8E2800704919 /* Highlights.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Highlights.json; sourceTree = "<group>"; };
+		AFE422E01FDD8E5500704919 /* Categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Categories.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +209,8 @@
 			children = (
 				AFE422D81FDD5A1D00704919 /* Programs.json */,
 				AFE422DB1FDD5A6B00704919 /* Channels.json */,
+				AFE422DE1FDD8E2800704919 /* Highlights.json */,
+				AFE422E01FDD8E5500704919 /* Categories.json */,
 			);
 			path = "Mock Data Files";
 			sourceTree = "<group>";
@@ -296,7 +302,9 @@
 				AFE422A21FDD362900704919 /* LaunchScreen.storyboard in Resources */,
 				AFE4229F1FDD362900704919 /* Assets.xcassets in Resources */,
 				AFE422DC1FDD5A6B00704919 /* Channels.json in Resources */,
+				AFE422DF1FDD8E2800704919 /* Highlights.json in Resources */,
 				AFE4229D1FDD362900704919 /* Main.storyboard in Resources */,
+				AFE422E11FDD8E5500704919 /* Categories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
