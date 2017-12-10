@@ -7,15 +7,32 @@
 //
 
 import Foundation
+import ObjectMapper
 
 struct Program {
-    let identifier: String
-    let start: Double
-    let end: Double
-    let minutes: Int
-    let channelIdentifier: String
-    let title: String
-    let subTitle: String?
-    let category: String
-    let genre: String
+    var identifier: String?
+    var start: Double?
+    var end: Double?
+    var minutes: Int?
+    var channelIdentifier: String?
+    var title: String?
+    var subTitle: String?
+    var category: String?
+    var genre: String?
+    
+    init?(map: Map) {
+        
+    }
+    
+    mutating func mapping(map: Map) {
+        identifier  <- map["recordId"]
+        title       <- map["title"]
+        category    <- map["category"]
+        start       <- map["start"]
+        end         <- map["end"]
+        minutes     <- map["min"]
+        channelIdentifier <- map["channelId"]
+        subTitle    <- map["subTitle"]
+        genre       <- map["genre"]
+    }
 }
