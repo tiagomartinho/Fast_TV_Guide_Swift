@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFE422981FDD362900704919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422971FDD362900704919 /* AppDelegate.swift */; };
+		AFE4229D1FDD362900704919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE4229B1FDD362900704919 /* Main.storyboard */; };
+		AFE4229F1FDD362900704919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE4229E1FDD362900704919 /* Assets.xcassets */; };
+		AFE422A21FDD362900704919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE422A01FDD362900704919 /* LaunchScreen.storyboard */; };
+		AFE422AD1FDD362900704919 /* Fast_TV_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422AC1FDD362900704919 /* Fast_TV_GuideTests.swift */; };
+		AFE422BA1FDD467200704919 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422B91FDD467200704919 /* AppController.swift */; };
+		AFE422BE1FDD468900704919 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422BD1FDD468900704919 /* AppData.swift */; };
+		AFE422C01FDD469400704919 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422BF1FDD469400704919 /* DataProvider.swift */; };
+		AFE422C21FDD46C800704919 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422C11FDD46C800704919 /* Channel.swift */; };
+		AFE422C41FDD46D200704919 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422C31FDD46D200704919 /* Program.swift */; };
+		AFE422C71FDD479700704919 /* ChannelsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422C61FDD479700704919 /* ChannelsService.swift */; };
+		AFE422C91FDD47B000704919 /* ProgramsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422C81FDD47B000704919 /* ProgramsService.swift */; };
+		AFE422CC1FDD480400704919 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422CB1FDD480400704919 /* FileLoader.swift */; };
+		AFE422CF1FDD4C8E00704919 /* TabBarWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422CE1FDD4C8E00704919 /* TabBarWireframe.swift */; };
+		AFE422D11FDD4D8B00704919 /* HighlightsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422D01FDD4D8B00704919 /* HighlightsService.swift */; };
+		AFE422D31FDD4DB000704919 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422D21FDD4DB000704919 /* Service.swift */; };
+		AFE422D51FDD4F3900704919 /* CategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422D41FDD4F3900704919 /* CategoriesService.swift */; };
+		AFE422D91FDD5A1D00704919 /* Programs.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422D81FDD5A1D00704919 /* Programs.json */; };
+		AFE422DA1FDD5A1E00704919 /* Programs.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422D81FDD5A1D00704919 /* Programs.json */; };
+		AFE422DC1FDD5A6B00704919 /* Channels.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422DB1FDD5A6B00704919 /* Channels.json */; };
+		AFE422DD1FDD5A6B00704919 /* Channels.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422DB1FDD5A6B00704919 /* Channels.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFE422A91FDD362900704919 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE4228C1FDD362900704919 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE422931FDD362900704919;
+			remoteInfo = "Fast TV Guide";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFE422941FDD362900704919 /* Fast TV Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fast TV Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE422971FDD362900704919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFE4229C1FDD362900704919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFE4229E1FDD362900704919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFE422A11FDD362900704919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFE422A31FDD362900704919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE422A81FDD362900704919 /* Fast TV GuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fast TV GuideTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE422AC1FDD362900704919 /* Fast_TV_GuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fast_TV_GuideTests.swift; sourceTree = "<group>"; };
+		AFE422AE1FDD362900704919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE422B91FDD467200704919 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		AFE422BD1FDD468900704919 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		AFE422BF1FDD469400704919 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		AFE422C11FDD46C800704919 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		AFE422C31FDD46D200704919 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		AFE422C61FDD479700704919 /* ChannelsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsService.swift; sourceTree = "<group>"; };
+		AFE422C81FDD47B000704919 /* ProgramsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsService.swift; sourceTree = "<group>"; };
+		AFE422CB1FDD480400704919 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		AFE422CE1FDD4C8E00704919 /* TabBarWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWireframe.swift; sourceTree = "<group>"; };
+		AFE422D01FDD4D8B00704919 /* HighlightsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsService.swift; sourceTree = "<group>"; };
+		AFE422D21FDD4DB000704919 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		AFE422D41FDD4F3900704919 /* CategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesService.swift; sourceTree = "<group>"; };
+		AFE422D81FDD5A1D00704919 /* Programs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Programs.json; sourceTree = "<group>"; };
+		AFE422DB1FDD5A6B00704919 /* Channels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Channels.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFE422911FDD362900704919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE422A51FDD362900704919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFE4228B1FDD362900704919 = {
+			isa = PBXGroup;
+			children = (
+				AFE422961FDD362900704919 /* Fast TV Guide */,
+				AFE422AB1FDD362900704919 /* Fast TV GuideTests */,
+				AFE422951FDD362900704919 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFE422951FDD362900704919 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422941FDD362900704919 /* Fast TV Guide.app */,
+				AFE422A81FDD362900704919 /* Fast TV GuideTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFE422961FDD362900704919 /* Fast TV Guide */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422D61FDD590A00704919 /* Supporting Files */,
+				AFE422CA1FDD47F600704919 /* Utils */,
+				AFE422C51FDD478000704919 /* Services */,
+				AFE422BC1FDD467D00704919 /* Data */,
+				AFE422BB1FDD467800704919 /* Model */,
+				AFE422B81FDD465E00704919 /* Modules */,
+			);
+			path = "Fast TV Guide";
+			sourceTree = "<group>";
+		};
+		AFE422AB1FDD362900704919 /* Fast TV GuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422AC1FDD362900704919 /* Fast_TV_GuideTests.swift */,
+				AFE422AE1FDD362900704919 /* Info.plist */,
+			);
+			path = "Fast TV GuideTests";
+			sourceTree = "<group>";
+		};
+		AFE422B71FDD465400704919 /* Root Module */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422B91FDD467200704919 /* AppController.swift */,
+			);
+			path = "Root Module";
+			sourceTree = "<group>";
+		};
+		AFE422B81FDD465E00704919 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422CD1FDD4C1700704919 /* TabBar Module */,
+				AFE422B71FDD465400704919 /* Root Module */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AFE422BB1FDD467800704919 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422C11FDD46C800704919 /* Channel.swift */,
+				AFE422C31FDD46D200704919 /* Program.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFE422BC1FDD467D00704919 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422BD1FDD468900704919 /* AppData.swift */,
+				AFE422BF1FDD469400704919 /* DataProvider.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AFE422C51FDD478000704919 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422D21FDD4DB000704919 /* Service.swift */,
+				AFE422C61FDD479700704919 /* ChannelsService.swift */,
+				AFE422C81FDD47B000704919 /* ProgramsService.swift */,
+				AFE422D01FDD4D8B00704919 /* HighlightsService.swift */,
+				AFE422D41FDD4F3900704919 /* CategoriesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AFE422CA1FDD47F600704919 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422CB1FDD480400704919 /* FileLoader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AFE422CD1FDD4C1700704919 /* TabBar Module */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422CE1FDD4C8E00704919 /* TabBarWireframe.swift */,
+			);
+			path = "TabBar Module";
+			sourceTree = "<group>";
+		};
+		AFE422D61FDD590A00704919 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422D71FDD59E700704919 /* Mock Data Files */,
+				AFE422971FDD362900704919 /* AppDelegate.swift */,
+				AFE4229B1FDD362900704919 /* Main.storyboard */,
+				AFE4229E1FDD362900704919 /* Assets.xcassets */,
+				AFE422A01FDD362900704919 /* LaunchScreen.storyboard */,
+				AFE422A31FDD362900704919 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFE422D71FDD59E700704919 /* Mock Data Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422D81FDD5A1D00704919 /* Programs.json */,
+				AFE422DB1FDD5A6B00704919 /* Channels.json */,
+			);
+			path = "Mock Data Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFE422931FDD362900704919 /* Fast TV Guide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE422B11FDD362900704919 /* Build configuration list for PBXNativeTarget "Fast TV Guide" */;
+			buildPhases = (
+				AFE422901FDD362900704919 /* Sources */,
+				AFE422911FDD362900704919 /* Frameworks */,
+				AFE422921FDD362900704919 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fast TV Guide";
+			productName = "Fast TV Guide";
+			productReference = AFE422941FDD362900704919 /* Fast TV Guide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFE422A71FDD362900704919 /* Fast TV GuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE422B41FDD362900704919 /* Build configuration list for PBXNativeTarget "Fast TV GuideTests" */;
+			buildPhases = (
+				AFE422A41FDD362900704919 /* Sources */,
+				AFE422A51FDD362900704919 /* Frameworks */,
+				AFE422A61FDD362900704919 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFE422AA1FDD362900704919 /* PBXTargetDependency */,
+			);
+			name = "Fast TV GuideTests";
+			productName = "Fast TV GuideTests";
+			productReference = AFE422A81FDD362900704919 /* Fast TV GuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFE4228C1FDD362900704919 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Stanwood;
+				TargetAttributes = {
+					AFE422931FDD362900704919 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					AFE422A71FDD362900704919 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AFE422931FDD362900704919;
+					};
+				};
+			};
+			buildConfigurationList = AFE4228F1FDD362900704919 /* Build configuration list for PBXProject "Fast TV Guide" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFE4228B1FDD362900704919;
+			productRefGroup = AFE422951FDD362900704919 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFE422931FDD362900704919 /* Fast TV Guide */,
+				AFE422A71FDD362900704919 /* Fast TV GuideTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFE422921FDD362900704919 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE422D91FDD5A1D00704919 /* Programs.json in Resources */,
+				AFE422A21FDD362900704919 /* LaunchScreen.storyboard in Resources */,
+				AFE4229F1FDD362900704919 /* Assets.xcassets in Resources */,
+				AFE422DC1FDD5A6B00704919 /* Channels.json in Resources */,
+				AFE4229D1FDD362900704919 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE422A61FDD362900704919 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE422DA1FDD5A1E00704919 /* Programs.json in Resources */,
+				AFE422DD1FDD5A6B00704919 /* Channels.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFE422901FDD362900704919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE422D31FDD4DB000704919 /* Service.swift in Sources */,
+				AFE422C91FDD47B000704919 /* ProgramsService.swift in Sources */,
+				AFE422CF1FDD4C8E00704919 /* TabBarWireframe.swift in Sources */,
+				AFE422C21FDD46C800704919 /* Channel.swift in Sources */,
+				AFE422981FDD362900704919 /* AppDelegate.swift in Sources */,
+				AFE422CC1FDD480400704919 /* FileLoader.swift in Sources */,
+				AFE422C01FDD469400704919 /* DataProvider.swift in Sources */,
+				AFE422C41FDD46D200704919 /* Program.swift in Sources */,
+				AFE422D51FDD4F3900704919 /* CategoriesService.swift in Sources */,
+				AFE422C71FDD479700704919 /* ChannelsService.swift in Sources */,
+				AFE422BA1FDD467200704919 /* AppController.swift in Sources */,
+				AFE422D11FDD4D8B00704919 /* HighlightsService.swift in Sources */,
+				AFE422BE1FDD468900704919 /* AppData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE422A41FDD362900704919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE422AD1FDD362900704919 /* Fast_TV_GuideTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFE422AA1FDD362900704919 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE422931FDD362900704919 /* Fast TV Guide */;
+			targetProxy = AFE422A91FDD362900704919 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFE4229B1FDD362900704919 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFE4229C1FDD362900704919 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFE422A01FDD362900704919 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFE422A11FDD362900704919 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFE422AF1FDD362900704919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFE422B01FDD362900704919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFE422B21FDD362900704919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZC4L7BE562;
+				INFOPLIST_FILE = "$(SRCROOT)/Fast TV Guide/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stanwood.Fast-TV-Guide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFE422B31FDD362900704919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZC4L7BE562;
+				INFOPLIST_FILE = "$(SRCROOT)/Fast TV Guide/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stanwood.Fast-TV-Guide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFE422B51FDD362900704919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZC4L7BE562;
+				INFOPLIST_FILE = "Fast TV GuideTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stanwood.Fast-TV-GuideTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fast TV Guide.app/Fast TV Guide";
+			};
+			name = Debug;
+		};
+		AFE422B61FDD362900704919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZC4L7BE562;
+				INFOPLIST_FILE = "Fast TV GuideTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stanwood.Fast-TV-GuideTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fast TV Guide.app/Fast TV Guide";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFE4228F1FDD362900704919 /* Build configuration list for PBXProject "Fast TV Guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE422AF1FDD362900704919 /* Debug */,
+				AFE422B01FDD362900704919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE422B11FDD362900704919 /* Build configuration list for PBXNativeTarget "Fast TV Guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE422B21FDD362900704919 /* Debug */,
+				AFE422B31FDD362900704919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE422B41FDD362900704919 /* Build configuration list for PBXNativeTarget "Fast TV GuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE422B51FDD362900704919 /* Debug */,
+				AFE422B61FDD362900704919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFE4228C1FDD362900704919 /* Project object */;
+}

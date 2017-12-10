@@ -1,0 +1,15 @@
+[
+     {
+         "title": "ARD",
+         "channelId": "ARD"
+     },{
+         "title": "ZDF",
+         "channelId": "ZDF"
+     }, {
+         "title": "RTL",
+         "channelId": "RTL"
+     }, {
+         "title": "SA1",
+         "channelId": "SA1"
+     }
+]
