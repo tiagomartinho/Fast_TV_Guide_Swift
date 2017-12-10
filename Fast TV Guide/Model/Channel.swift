@@ -7,8 +7,18 @@
 //
 
 import Foundation
+import ObjectMapper
 
-struct Channel {
-    let title: String
-    let identifier: String
+struct Channel: Mappable {
+    var title: String?
+    var identifier: String?
+    
+    init?(map: Map) {
+        
+    }
+    
+    mutating func mapping(map: Map) {
+        title       <- map["title"]
+        identifier  <- map["channelId"]
+    }
 }

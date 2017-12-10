@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AE840148FCA33515340F4C6 /* Pods_Fast_TV_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AEA6A87452F442650D0F12 /* Pods_Fast_TV_Guide.framework */; };
 		AFE422981FDD362900704919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422971FDD362900704919 /* AppDelegate.swift */; };
 		AFE4229D1FDD362900704919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE4229B1FDD362900704919 /* Main.storyboard */; };
 		AFE4229F1FDD362900704919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE4229E1FDD362900704919 /* Assets.xcassets */; };
@@ -19,7 +20,7 @@
 		AFE422C41FDD46D200704919 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422C31FDD46D200704919 /* Program.swift */; };
 		AFE422C71FDD479700704919 /* ChannelsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422C61FDD479700704919 /* ChannelsService.swift */; };
 		AFE422C91FDD47B000704919 /* ProgramsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422C81FDD47B000704919 /* ProgramsService.swift */; };
-		AFE422CC1FDD480400704919 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422CB1FDD480400704919 /* FileLoader.swift */; };
+		AFE422CC1FDD480400704919 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422CB1FDD480400704919 /* MockData.swift */; };
 		AFE422CF1FDD4C8E00704919 /* TabBarWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422CE1FDD4C8E00704919 /* TabBarWireframe.swift */; };
 		AFE422D11FDD4D8B00704919 /* HighlightsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422D01FDD4D8B00704919 /* HighlightsService.swift */; };
 		AFE422D31FDD4DB000704919 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422D21FDD4DB000704919 /* Service.swift */; };
@@ -30,6 +31,8 @@
 		AFE422DD1FDD5A6B00704919 /* Channels.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422DB1FDD5A6B00704919 /* Channels.json */; };
 		AFE422DF1FDD8E2800704919 /* Highlights.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422DE1FDD8E2800704919 /* Highlights.json */; };
 		AFE422E11FDD8E5500704919 /* Categories.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422E01FDD8E5500704919 /* Categories.json */; };
+		AFE422E41FDD9BDA00704919 /* ChannelsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422E31FDD9BDA00704919 /* ChannelsParser.swift */; };
+		AFE422E61FDD9DF400704919 /* ChannelsParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422E51FDD9DF400704919 /* ChannelsParserTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45AEA6A87452F442650D0F12 /* Pods_Fast_TV_Guide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fast_TV_Guide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A9759390649558CAD5ACCA /* Pods-Fast TV Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fast TV Guide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fast TV Guide/Pods-Fast TV Guide.debug.xcconfig"; sourceTree = "<group>"; };
 		AFE422941FDD362900704919 /* Fast TV Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fast TV Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE422971FDD362900704919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE4229C1FDD362900704919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +64,7 @@
 		AFE422C31FDD46D200704919 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		AFE422C61FDD479700704919 /* ChannelsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsService.swift; sourceTree = "<group>"; };
 		AFE422C81FDD47B000704919 /* ProgramsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsService.swift; sourceTree = "<group>"; };
-		AFE422CB1FDD480400704919 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		AFE422CB1FDD480400704919 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		AFE422CE1FDD4C8E00704919 /* TabBarWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWireframe.swift; sourceTree = "<group>"; };
 		AFE422D01FDD4D8B00704919 /* HighlightsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsService.swift; sourceTree = "<group>"; };
 		AFE422D21FDD4DB000704919 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -68,6 +73,9 @@
 		AFE422DB1FDD5A6B00704919 /* Channels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Channels.json; sourceTree = "<group>"; };
 		AFE422DE1FDD8E2800704919 /* Highlights.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Highlights.json; sourceTree = "<group>"; };
 		AFE422E01FDD8E5500704919 /* Categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Categories.json; sourceTree = "<group>"; };
+		AFE422E31FDD9BDA00704919 /* ChannelsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsParser.swift; sourceTree = "<group>"; };
+		AFE422E51FDD9DF400704919 /* ChannelsParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsParserTests.swift; sourceTree = "<group>"; };
+		E6289AC563357779A435F4AB /* Pods-Fast TV Guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fast TV Guide.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fast TV Guide/Pods-Fast TV Guide.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE840148FCA33515340F4C6 /* Pods_Fast_TV_Guide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +97,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		191118D444E7119219815EDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45AEA6A87452F442650D0F12 /* Pods_Fast_TV_Guide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28D5957EDC36B6C2E9220058 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1A9759390649558CAD5ACCA /* Pods-Fast TV Guide.debug.xcconfig */,
+				E6289AC563357779A435F4AB /* Pods-Fast TV Guide.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AFE4228B1FDD362900704919 = {
 			isa = PBXGroup;
 			children = (
 				AFE422961FDD362900704919 /* Fast TV Guide */,
 				AFE422AB1FDD362900704919 /* Fast TV GuideTests */,
 				AFE422951FDD362900704919 /* Products */,
+				28D5957EDC36B6C2E9220058 /* Pods */,
+				191118D444E7119219815EDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +152,7 @@
 			children = (
 				AFE422AC1FDD362900704919 /* Fast_TV_GuideTests.swift */,
 				AFE422AE1FDD362900704919 /* Info.plist */,
+				AFE422E51FDD9DF400704919 /* ChannelsParserTests.swift */,
 			);
 			path = "Fast TV GuideTests";
 			sourceTree = "<group>";
@@ -178,7 +207,8 @@
 		AFE422CA1FDD47F600704919 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				AFE422CB1FDD480400704919 /* FileLoader.swift */,
+				AFE422E21FDD9BC900704919 /* Parsers */,
+				AFE422CB1FDD480400704919 /* MockData.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -215,6 +245,14 @@
 			path = "Mock Data Files";
 			sourceTree = "<group>";
 		};
+		AFE422E21FDD9BC900704919 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				AFE422E31FDD9BDA00704919 /* ChannelsParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,9 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFE422B11FDD362900704919 /* Build configuration list for PBXNativeTarget "Fast TV Guide" */;
 			buildPhases = (
+				5D518A49FF26BA22F51AE54D /* [CP] Check Pods Manifest.lock */,
 				AFE422901FDD362900704919 /* Sources */,
 				AFE422911FDD362900704919 /* Frameworks */,
 				AFE422921FDD362900704919 /* Resources */,
+				5606D53106237E4D8D6DD84C /* [CP] Embed Pods Frameworks */,
+				70E16DBC8E36B48735F3748C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,6 +360,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5606D53106237E4D8D6DD84C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fast TV Guide/Pods-Fast TV Guide-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fast TV Guide/Pods-Fast TV Guide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D518A49FF26BA22F51AE54D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fast TV Guide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70E16DBC8E36B48735F3748C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fast TV Guide/Pods-Fast TV Guide-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFE422901FDD362900704919 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -329,11 +424,12 @@
 				AFE422CF1FDD4C8E00704919 /* TabBarWireframe.swift in Sources */,
 				AFE422C21FDD46C800704919 /* Channel.swift in Sources */,
 				AFE422981FDD362900704919 /* AppDelegate.swift in Sources */,
-				AFE422CC1FDD480400704919 /* FileLoader.swift in Sources */,
+				AFE422CC1FDD480400704919 /* MockData.swift in Sources */,
 				AFE422C01FDD469400704919 /* DataProvider.swift in Sources */,
 				AFE422C41FDD46D200704919 /* Program.swift in Sources */,
 				AFE422D51FDD4F3900704919 /* CategoriesService.swift in Sources */,
 				AFE422C71FDD479700704919 /* ChannelsService.swift in Sources */,
+				AFE422E41FDD9BDA00704919 /* ChannelsParser.swift in Sources */,
 				AFE422BA1FDD467200704919 /* AppController.swift in Sources */,
 				AFE422D11FDD4D8B00704919 /* HighlightsService.swift in Sources */,
 				AFE422BE1FDD468900704919 /* AppData.swift in Sources */,
@@ -344,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE422E61FDD9DF400704919 /* ChannelsParserTests.swift in Sources */,
 				AFE422AD1FDD362900704919 /* Fast_TV_GuideTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +584,7 @@
 		};
 		AFE422B21FDD362900704919 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1A9759390649558CAD5ACCA /* Pods-Fast TV Guide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -502,6 +600,7 @@
 		};
 		AFE422B31FDD362900704919 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6289AC563357779A435F4AB /* Pods-Fast TV Guide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
