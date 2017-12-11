@@ -10,7 +10,7 @@ import Foundation
 
 class AppData {
     var channels: [Channel] = []
-    var programs: [Program] = []
-    
-    
+    var channelsWithPrograms: [String : [Program]] = [:]
+    var highlightIdentifiers: [String] = []
+    var categories: [String] = []
 }
