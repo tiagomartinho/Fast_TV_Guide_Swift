@@ -1,15 +1,16 @@
 //
-//  Fast_TV_GuideTests.swift
+//  DataProviderTests.swift
 //  Fast TV GuideTests
 //
-//  Created by Ronan on 10/12/2017.
+//  Created by Ronan on 11/12/2017.
 //  Copyright © 2017 Stanwood. All rights reserved.
 //
 
 import XCTest
+
 @testable import Fast_TV_Guide
 
-class Fast_TV_GuideTests: XCTestCase {
+class DataProviderTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,16 +22,8 @@ class Fast_TV_GuideTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testFilterWith2Items() {
+        // let program = Program.init(map: <#T##Map#>)
+        
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
