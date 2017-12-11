@@ -7,12 +7,10 @@
 //
 
 import Foundation
-import ObjectMapper
 
 struct ChannelsParser {
     func parse(data: Data) -> [Channel] {
-        let channelsString = String.init(data: data, encoding: String.Encoding.utf8)
-        let channels = Mapper<Channel>().mapArray(JSONString: channelsString!)
-        return channels!
+        let channels = try! JSONDecoder().decode([Channel].self, from: data)
+        return channels
     }
 }

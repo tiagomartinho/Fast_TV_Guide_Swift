@@ -7,18 +7,13 @@
 //
 
 import Foundation
-import ObjectMapper
 
-struct Channel: Mappable {
-    var title: String?
-    var identifier: String?
+struct Channel: Decodable {
+    let title: String
+    let identifier: String
     
-    init?(map: Map) {
-        
-    }
-    
-    mutating func mapping(map: Map) {
-        title       <- map["title"]
-        identifier  <- map["channelId"]
+    enum CodingKeys : String, CodingKey {
+        case title
+        case identifier = "channelId"
     }
 }
