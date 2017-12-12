@@ -17,10 +17,17 @@ class ProgramPresenter {
     }
     
     func viewDidLoad() {
-        // set all the data in the view.
         
         viewController.titleLabel.text = program.title
         viewController.subTitleLabel.text = program.subTitle
+        viewController.channelLabel.text = program.channelIdentifier
+        viewController.categoryLabel.text = program.category
+        viewController.genreLabel.text = program.genre
+        
+        // let startTime = program.start
+        
+        viewController.durationLabel.text = String(describing: program.minutes)
+        viewController.startTimeLabel.text = "12:30 AM"
     }
     
     func dismiss() {

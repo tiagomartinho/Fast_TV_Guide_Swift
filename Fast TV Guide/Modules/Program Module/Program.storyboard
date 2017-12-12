@@ -132,6 +132,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="categoryLabel" destination="gPJ-wy-B4E" id="EfT-Sc-yDK"/>
+                        <outlet property="channelLabel" destination="eIk-mF-aza" id="Po6-Rv-Dsf"/>
+                        <outlet property="durationLabel" destination="g6w-vM-mDE" id="O46-xO-dc1"/>
+                        <outlet property="genreLabel" destination="0I8-LC-8du" id="HTY-fY-0py"/>
+                        <outlet property="startTimeLabel" destination="fci-xO-MSh" id="A89-aG-NOq"/>
                         <outlet property="subTitleLabel" destination="6nz-fa-K02" id="jkx-L9-t0H"/>
                         <outlet property="titleLabel" destination="l6h-Wc-a6t" id="4z6-ZK-2w4"/>
                     </connections>
