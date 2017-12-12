@@ -11,9 +11,9 @@
 		AFD693081FDF2DDF0026EE25 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD693071FDF2DDF0026EE25 /* Presenter.swift */; };
 		AFD6930C1FDF380C0026EE25 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6930B1FDF380C0026EE25 /* DataProviderTests.swift */; };
 		AFD693101FDFCAC60026EE25 /* ARDPrograms.json in Resources */ = {isa = PBXBuildFile; fileRef = AFD6930F1FDFCAC60026EE25 /* ARDPrograms.json */; };
-		AFD693121FDFCAFE0026EE25 /* ZDFPrograms in Resources */ = {isa = PBXBuildFile; fileRef = AFD693111FDFCAFE0026EE25 /* ZDFPrograms */; };
-		AFD693141FDFCB390026EE25 /* RTLPrograms in Resources */ = {isa = PBXBuildFile; fileRef = AFD693131FDFCB390026EE25 /* RTLPrograms */; };
-		AFD693161FDFCB580026EE25 /* SA1Programs in Resources */ = {isa = PBXBuildFile; fileRef = AFD693151FDFCB580026EE25 /* SA1Programs */; };
+		AFD693121FDFCAFE0026EE25 /* ZDFPrograms.json in Resources */ = {isa = PBXBuildFile; fileRef = AFD693111FDFCAFE0026EE25 /* ZDFPrograms.json */; };
+		AFD693141FDFCB390026EE25 /* RTLPrograms.json in Resources */ = {isa = PBXBuildFile; fileRef = AFD693131FDFCB390026EE25 /* RTLPrograms.json */; };
+		AFD693161FDFCB580026EE25 /* SA1Programs.json in Resources */ = {isa = PBXBuildFile; fileRef = AFD693151FDFCB580026EE25 /* SA1Programs.json */; };
 		AFE422981FDD362900704919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422971FDD362900704919 /* AppDelegate.swift */; };
 		AFE4229D1FDD362900704919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE4229B1FDD362900704919 /* Main.storyboard */; };
 		AFE4229F1FDD362900704919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE4229E1FDD362900704919 /* Assets.xcassets */; };
@@ -67,9 +67,9 @@
 		AFD693071FDF2DDF0026EE25 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		AFD6930B1FDF380C0026EE25 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
 		AFD6930F1FDFCAC60026EE25 /* ARDPrograms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ARDPrograms.json; sourceTree = "<group>"; };
-		AFD693111FDFCAFE0026EE25 /* ZDFPrograms */ = {isa = PBXFileReference; lastKnownFileType = text; path = ZDFPrograms; sourceTree = "<group>"; };
-		AFD693131FDFCB390026EE25 /* RTLPrograms */ = {isa = PBXFileReference; lastKnownFileType = text; path = RTLPrograms; sourceTree = "<group>"; };
-		AFD693151FDFCB580026EE25 /* SA1Programs */ = {isa = PBXFileReference; lastKnownFileType = text; path = SA1Programs; sourceTree = "<group>"; };
+		AFD693111FDFCAFE0026EE25 /* ZDFPrograms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ZDFPrograms.json; sourceTree = "<group>"; };
+		AFD693131FDFCB390026EE25 /* RTLPrograms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RTLPrograms.json; sourceTree = "<group>"; };
+		AFD693151FDFCB580026EE25 /* SA1Programs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SA1Programs.json; sourceTree = "<group>"; };
 		AFE422941FDD362900704919 /* Fast TV Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fast TV Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE422971FDD362900704919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE4229C1FDD362900704919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -280,9 +280,9 @@
 				AFE422DE1FDD8E2800704919 /* Highlights.json */,
 				AFE422E01FDD8E5500704919 /* Categories.json */,
 				AFD6930F1FDFCAC60026EE25 /* ARDPrograms.json */,
-				AFD693111FDFCAFE0026EE25 /* ZDFPrograms */,
-				AFD693131FDFCB390026EE25 /* RTLPrograms */,
-				AFD693151FDFCB580026EE25 /* SA1Programs */,
+				AFD693111FDFCAFE0026EE25 /* ZDFPrograms.json */,
+				AFD693131FDFCB390026EE25 /* RTLPrograms.json */,
+				AFD693151FDFCB580026EE25 /* SA1Programs.json */,
 			);
 			path = "Mock Data Files";
 			sourceTree = "<group>";
@@ -401,11 +401,11 @@
 				AFE4229F1FDD362900704919 /* Assets.xcassets in Resources */,
 				AFE422DC1FDD5A6B00704919 /* Channels.json in Resources */,
 				AFE422DF1FDD8E2800704919 /* Highlights.json in Resources */,
-				AFD693141FDFCB390026EE25 /* RTLPrograms in Resources */,
+				AFD693141FDFCB390026EE25 /* RTLPrograms.json in Resources */,
 				AFE4229D1FDD362900704919 /* Main.storyboard in Resources */,
-				AFD693121FDFCAFE0026EE25 /* ZDFPrograms in Resources */,
+				AFD693121FDFCAFE0026EE25 /* ZDFPrograms.json in Resources */,
 				AFE422E11FDD8E5500704919 /* Categories.json in Resources */,
-				AFD693161FDFCB580026EE25 /* SA1Programs in Resources */,
+				AFD693161FDFCB580026EE25 /* SA1Programs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
