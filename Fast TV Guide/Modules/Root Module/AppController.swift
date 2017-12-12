@@ -25,6 +25,6 @@ class AppController {
     }
     
     func showTabbarScene() {
-        window.rootViewController = TabBarWireframe.makeTabBarController()
+        window.rootViewController = TabBarWireframe.makeTabBarController(appController: self)
     }
 }

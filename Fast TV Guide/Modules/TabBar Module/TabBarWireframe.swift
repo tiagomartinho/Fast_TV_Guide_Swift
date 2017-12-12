@@ -10,17 +10,19 @@ import Foundation
 import UIKit
 
 struct TabBarWireframe {
-    static func makeTabBarController() -> UITabBarController {
+    static func makeTabBarController(appController: AppController) -> UITabBarController {
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = makeTabbedViewControllers()
+        
+        let highlightsActionable = appController as HighlightsActionable
+        let highlightsDataProvider = appController.dataProvider as HighlightsDataProvider
+        let highlightsNavigationController = makeHighlightsViewController(dataProvider: highlightsDataProvider, action: highlightsActionable)
+        let channelsNavigationController = makeNavigationController(viewController: makeChannelsViewController())
+        let moviesNavigationController = makeNavigationController(viewController: makeMoviesViewController())
+        let categoriesNavigationController = makeNavigationController(viewController: makeCategoriesViewController())
+        
+        tabBarController.viewControllers = [highlightsNavigationController,
+        channelsNavigationController, moviesNavigationController, categoriesNavigationController]
         return tabBarController
-    }
-    
-    fileprivate static func makeTabbedViewControllers() -> [UIViewController] {
-        return [makeNavigationController(viewController: makeHighlightsViewController()),
-        makeNavigationController(viewController: makeChannelsViewController()),
-        makeNavigationController(viewController: makeMoviesViewController()),
-        makeNavigationController(viewController: makeCategoriesViewController())]
     }
     
     fileprivate static func makeNavigationController(viewController: UIViewController) -> UINavigationController {
@@ -31,8 +33,10 @@ struct TabBarWireframe {
         return navigationController
     }
     
-    fileprivate static func makeHighlightsViewController() -> UIViewController {
-        let viewController = UIViewController()
+    fileprivate static func makeHighlightsViewController(dataProvider: HighlightsDataProvider,
+                                                         action: HighlightsActionable) -> UIViewController {
+        let viewController = HighlightsWireframe.makeTableViewController()
+        HighlightsWireframe.prepare(viewController: viewController, dataProvider: dataProvider, action: action)
         viewController.title = "Highlights"
         viewController.view.backgroundColor = UIColor.white
         viewController.tabBarItem.image = UIImage(named: "HighlightsIcon")
