@@ -10,16 +10,20 @@ import Foundation
 import UIKit
 
 class HighlightsTableViewDataSource: NSObject, UITableViewDataSource {
+     var presenter: HighlightsPresenter!
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return presenter.dataProvider.highlights().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = UITableViewCell()
+        let program = presenter.dataProvider.highlights()[indexPath.row] as Program
+        cell.textLabel?.text = program.title
+        return cell
     }
 }
