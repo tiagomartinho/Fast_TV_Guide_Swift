@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AE840148FCA33515340F4C6 /* Pods_Fast_TV_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AEA6A87452F442650D0F12 /* Pods_Fast_TV_Guide.framework */; };
 		AFD693081FDF2DDF0026EE25 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD693071FDF2DDF0026EE25 /* Presenter.swift */; };
 		AFD6930C1FDF380C0026EE25 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6930B1FDF380C0026EE25 /* DataProviderTests.swift */; };
 		AFD693101FDFCAC60026EE25 /* ARDPrograms.json in Resources */ = {isa = PBXBuildFile; fileRef = AFD6930F1FDFCAC60026EE25 /* ARDPrograms.json */; };
@@ -115,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE840148FCA33515340F4C6 /* Pods_Fast_TV_Guide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,12 +314,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFE422B11FDD362900704919 /* Build configuration list for PBXNativeTarget "Fast TV Guide" */;
 			buildPhases = (
-				5D518A49FF26BA22F51AE54D /* [CP] Check Pods Manifest.lock */,
 				AFE422901FDD362900704919 /* Sources */,
 				AFE422911FDD362900704919 /* Frameworks */,
 				AFE422921FDD362900704919 /* Resources */,
-				5606D53106237E4D8D6DD84C /* [CP] Embed Pods Frameworks */,
-				70E16DBC8E36B48735F3748C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -419,60 +414,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5606D53106237E4D8D6DD84C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Fast TV Guide/Pods-Fast TV Guide-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fast TV Guide/Pods-Fast TV Guide-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5D518A49FF26BA22F51AE54D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Fast TV Guide-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		70E16DBC8E36B48735F3748C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fast TV Guide/Pods-Fast TV Guide-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFE422901FDD362900704919 /* Sources */ = {
