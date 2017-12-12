@@ -9,5 +9,8 @@
 import Foundation
 
 class HighlightsPresenter {
-    
+    var delegate: HighlightsTableViewDelegate!
+    var dataSource: HighlightsTableViewDataSource!
+    var dataProvider: HighlightsDataProvider!
+    weak var viewController: HighlightsTableViewController!
 }
