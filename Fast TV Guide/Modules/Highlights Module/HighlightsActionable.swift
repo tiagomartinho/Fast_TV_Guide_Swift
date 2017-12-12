@@ -9,9 +9,16 @@
 import Foundation
 
 protocol HighlightsActionable {
-    
+    func show(program: Program)
 }
 
 extension AppController: HighlightsActionable {
-    
+    func show(program: Program) {
+        let programNavigationController = ProgramWireframe.makeViewController()
+        let viewController = programNavigationController.topViewController as! ProgramViewController
+        ProgramWireframe.prepare(viewController: viewController, program: program)
+        
+        let navigationController = currentNavigationController()
+        navigationController.present(programNavigationController, animated: true, completion: nil)
+    }
 }

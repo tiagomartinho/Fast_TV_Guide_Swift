@@ -11,4 +11,10 @@ import UIKit
 
 class HighlightsTableViewDelegate: NSObject, UITableViewDelegate {
     var presenter: HighlightsPresenter!
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        presenter.didSelectRow(at: indexPath)
+    }
 }

@@ -12,5 +12,12 @@ class HighlightsPresenter {
     var delegate: HighlightsTableViewDelegate!
     var dataSource: HighlightsTableViewDataSource!
     var dataProvider: HighlightsDataProvider!
+    var action: HighlightsActionable!
     weak var viewController: HighlightsTableViewController!
+    
+    func didSelectRow(at indexPath: IndexPath) {
+        let program = dataProvider.highlights()[indexPath.row] as Program
+        
+        action.show(program: program)
+    }
 }

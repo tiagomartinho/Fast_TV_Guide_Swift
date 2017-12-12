@@ -25,6 +25,7 @@ struct HighlightsWireframe {
         let dataSource = HighlightsTableViewDataSource()
         let delegate = HighlightsTableViewDelegate()
         
+        presenter.action = action
         presenter.delegate = delegate
         presenter.dataSource = dataSource
         presenter.dataProvider = dataProvider

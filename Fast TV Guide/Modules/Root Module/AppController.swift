@@ -27,4 +27,16 @@ class AppController {
     func showTabbarScene() {
         window.rootViewController = TabBarWireframe.makeTabBarController(appController: self)
     }
+    
+    func currentNavigationController() -> UINavigationController {
+        let currentViewController = window.rootViewController
+
+        if currentViewController is UITabBarController {
+            let tabBarController = currentViewController as! UITabBarController
+            let selectedIndex = tabBarController.selectedIndex
+            return tabBarController.viewControllers![selectedIndex] as! UINavigationController
+        }
+        
+        return UINavigationController()
+    }
 }

@@ -13,6 +13,10 @@
 		AFD693121FDFCAFE0026EE25 /* ZDFPrograms.json in Resources */ = {isa = PBXBuildFile; fileRef = AFD693111FDFCAFE0026EE25 /* ZDFPrograms.json */; };
 		AFD693141FDFCB390026EE25 /* RTLPrograms.json in Resources */ = {isa = PBXBuildFile; fileRef = AFD693131FDFCB390026EE25 /* RTLPrograms.json */; };
 		AFD693161FDFCB580026EE25 /* SA1Programs.json in Resources */ = {isa = PBXBuildFile; fileRef = AFD693151FDFCB580026EE25 /* SA1Programs.json */; };
+		AFD693191FE01D7A0026EE25 /* Program.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD693181FE01D7A0026EE25 /* Program.storyboard */; };
+		AFD6931B1FE020750026EE25 /* ProgramWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6931A1FE020750026EE25 /* ProgramWireframe.swift */; };
+		AFD6931D1FE021120026EE25 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6931C1FE021120026EE25 /* ProgramViewController.swift */; };
+		AFD6931F1FE021430026EE25 /* ProgramPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6931E1FE021430026EE25 /* ProgramPresenter.swift */; };
 		AFE422981FDD362900704919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422971FDD362900704919 /* AppDelegate.swift */; };
 		AFE4229D1FDD362900704919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE4229B1FDD362900704919 /* Main.storyboard */; };
 		AFE4229F1FDD362900704919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE4229E1FDD362900704919 /* Assets.xcassets */; };
@@ -69,6 +73,10 @@
 		AFD693111FDFCAFE0026EE25 /* ZDFPrograms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ZDFPrograms.json; sourceTree = "<group>"; };
 		AFD693131FDFCB390026EE25 /* RTLPrograms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RTLPrograms.json; sourceTree = "<group>"; };
 		AFD693151FDFCB580026EE25 /* SA1Programs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SA1Programs.json; sourceTree = "<group>"; };
+		AFD693181FE01D7A0026EE25 /* Program.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Program.storyboard; sourceTree = "<group>"; };
+		AFD6931A1FE020750026EE25 /* ProgramWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramWireframe.swift; sourceTree = "<group>"; };
+		AFD6931C1FE021120026EE25 /* ProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
+		AFD6931E1FE021430026EE25 /* ProgramPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramPresenter.swift; sourceTree = "<group>"; };
 		AFE422941FDD362900704919 /* Fast TV Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fast TV Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE422971FDD362900704919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE4229C1FDD362900704919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,6 +152,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AFD693171FE01D540026EE25 /* Program Module */ = {
+			isa = PBXGroup;
+			children = (
+				AFD693181FE01D7A0026EE25 /* Program.storyboard */,
+				AFD6931A1FE020750026EE25 /* ProgramWireframe.swift */,
+				AFD6931C1FE021120026EE25 /* ProgramViewController.swift */,
+				AFD6931E1FE021430026EE25 /* ProgramPresenter.swift */,
+			);
+			path = "Program Module";
+			sourceTree = "<group>";
+		};
 		AFE4228B1FDD362900704919 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +221,7 @@
 		AFE422B81FDD465E00704919 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AFD693171FE01D540026EE25 /* Program Module */,
 				AFE422F31FDDF0F100704919 /* Highlights Module */,
 				AFE422CD1FDD4C1700704919 /* TabBar Module */,
 				AFE422B71FDD465400704919 /* Root Module */,
@@ -395,6 +415,7 @@
 				AFD693101FDFCAC60026EE25 /* ARDPrograms.json in Resources */,
 				AFE4229F1FDD362900704919 /* Assets.xcassets in Resources */,
 				AFE422DC1FDD5A6B00704919 /* Channels.json in Resources */,
+				AFD693191FE01D7A0026EE25 /* Program.storyboard in Resources */,
 				AFE422DF1FDD8E2800704919 /* Highlights.json in Resources */,
 				AFD693141FDFCB390026EE25 /* RTLPrograms.json in Resources */,
 				AFE4229D1FDD362900704919 /* Main.storyboard in Resources */,
@@ -425,9 +446,11 @@
 				AFE422F51FDDF10400704919 /* HighlightsWireframe.swift in Sources */,
 				AFE422C91FDD47B000704919 /* ProgramsService.swift in Sources */,
 				AFE422CF1FDD4C8E00704919 /* TabBarWireframe.swift in Sources */,
+				AFD6931D1FE021120026EE25 /* ProgramViewController.swift in Sources */,
 				AFE422FF1FDE688400704919 /* HighlightsActionable.swift in Sources */,
 				AFE422C21FDD46C800704919 /* Channel.swift in Sources */,
 				AFE422981FDD362900704919 /* AppDelegate.swift in Sources */,
+				AFD6931B1FE020750026EE25 /* ProgramWireframe.swift in Sources */,
 				AFE422F91FDE684200704919 /* HighlightsTableViewController.swift in Sources */,
 				AFE422CC1FDD480400704919 /* MockData.swift in Sources */,
 				AFE422C01FDD469400704919 /* DataProvider.swift in Sources */,
@@ -441,6 +464,7 @@
 				AFE422D11FDD4D8B00704919 /* HighlightsService.swift in Sources */,
 				AFE422BE1FDD468900704919 /* AppData.swift in Sources */,
 				AFE422F01FDDE3AA00704919 /* ProgramsParser.swift in Sources */,
+				AFD6931F1FE021430026EE25 /* ProgramPresenter.swift in Sources */,
 				AFE422FD1FDE686D00704919 /* HighlightsTableViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
