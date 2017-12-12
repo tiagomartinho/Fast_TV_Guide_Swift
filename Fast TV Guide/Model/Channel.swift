@@ -13,7 +13,8 @@ struct Channel: Decodable {
     let identifier: String
     
     enum CodingKeys : String, CodingKey {
-        case title
-        case identifier = "channelId"
+        case
+        title,
+        identifier = "channelId"
     }
 }

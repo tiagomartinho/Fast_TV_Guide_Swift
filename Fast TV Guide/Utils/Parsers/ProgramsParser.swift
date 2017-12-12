@@ -17,7 +17,9 @@ struct ProgramsParser {
         let channelsWithPrograms = try! JSONSerialization.jsonObject(with: data, options: []) as! [String:[[String:Any]]]
         
         for (key, programsData) in channelsWithPrograms {
-            let programs: [Program] = Mapper<Program>().mapArray(JSONArray: programsData)
+            // let channels = try! JSONDecoder().decode([Channel].self, from: data)
+            let programs = try! JSONDecoder().decode([Program].self, from: programsData)
+            //let programs: [Program] = Mapper<Program>().mapArray(JSONArray: programsData)
             channelPrograms[key] = programs
         }
         

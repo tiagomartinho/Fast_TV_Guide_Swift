@@ -7,32 +7,28 @@
 //
 
 import Foundation
-import ObjectMapper
 
-struct Program: Mappable {
-    var identifier: String?
-    var start: Double?
-    var end: Double?
-    var minutes: Int?
-    var channelIdentifier: String?
-    var title: String?
+struct Program: Decodable {
+    var identifier: String
+    var start: Double
+    var end: Double
+    var minutes: Int
+    var channelIdentifier: String
+    var title: String
     var subTitle: String?
-    var category: String?
-    var genre: String?
+    var category: String
+    var genre: String
     
-    init?(map: Map) {
-        
-    }
-    
-    mutating func mapping(map: Map) {
-        identifier  <- map["recordId"]
-        title       <- map["title"]
-        category    <- map["category"]
-        start       <- map["start"]
-        end         <- map["end"]
-        minutes     <- map["min"]
-        channelIdentifier <- map["channelId"]
-        subTitle    <- map["subTitle"]
-        genre       <- map["genre"]
+    enum CodingKeys : String, CodingKey {
+        case
+        identifier = "recordId",
+        title,
+        category,
+        start,
+        end,
+        minutes = "min",
+        channelIdentifier = "channelId",
+        subTitle,
+        genre
     }
 }

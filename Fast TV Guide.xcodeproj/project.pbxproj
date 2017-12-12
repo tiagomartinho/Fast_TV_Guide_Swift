@@ -10,6 +10,10 @@
 		4AE840148FCA33515340F4C6 /* Pods_Fast_TV_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AEA6A87452F442650D0F12 /* Pods_Fast_TV_Guide.framework */; };
 		AFD693081FDF2DDF0026EE25 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD693071FDF2DDF0026EE25 /* Presenter.swift */; };
 		AFD6930C1FDF380C0026EE25 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6930B1FDF380C0026EE25 /* DataProviderTests.swift */; };
+		AFD693101FDFCAC60026EE25 /* ARDPrograms.json in Resources */ = {isa = PBXBuildFile; fileRef = AFD6930F1FDFCAC60026EE25 /* ARDPrograms.json */; };
+		AFD693121FDFCAFE0026EE25 /* ZDFPrograms in Resources */ = {isa = PBXBuildFile; fileRef = AFD693111FDFCAFE0026EE25 /* ZDFPrograms */; };
+		AFD693141FDFCB390026EE25 /* RTLPrograms in Resources */ = {isa = PBXBuildFile; fileRef = AFD693131FDFCB390026EE25 /* RTLPrograms */; };
+		AFD693161FDFCB580026EE25 /* SA1Programs in Resources */ = {isa = PBXBuildFile; fileRef = AFD693151FDFCB580026EE25 /* SA1Programs */; };
 		AFE422981FDD362900704919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422971FDD362900704919 /* AppDelegate.swift */; };
 		AFE4229D1FDD362900704919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE4229B1FDD362900704919 /* Main.storyboard */; };
 		AFE4229F1FDD362900704919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE4229E1FDD362900704919 /* Assets.xcassets */; };
@@ -26,8 +30,8 @@
 		AFE422D11FDD4D8B00704919 /* HighlightsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422D01FDD4D8B00704919 /* HighlightsService.swift */; };
 		AFE422D31FDD4DB000704919 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422D21FDD4DB000704919 /* Service.swift */; };
 		AFE422D51FDD4F3900704919 /* CategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE422D41FDD4F3900704919 /* CategoriesService.swift */; };
-		AFE422D91FDD5A1D00704919 /* Programs.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422D81FDD5A1D00704919 /* Programs.json */; };
-		AFE422DA1FDD5A1E00704919 /* Programs.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422D81FDD5A1D00704919 /* Programs.json */; };
+		AFE422D91FDD5A1D00704919 /* ChannelsWithPrograms.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422D81FDD5A1D00704919 /* ChannelsWithPrograms.json */; };
+		AFE422DA1FDD5A1E00704919 /* ChannelsWithPrograms.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422D81FDD5A1D00704919 /* ChannelsWithPrograms.json */; };
 		AFE422DC1FDD5A6B00704919 /* Channels.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422DB1FDD5A6B00704919 /* Channels.json */; };
 		AFE422DD1FDD5A6B00704919 /* Channels.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422DB1FDD5A6B00704919 /* Channels.json */; };
 		AFE422DF1FDD8E2800704919 /* Highlights.json in Resources */ = {isa = PBXBuildFile; fileRef = AFE422DE1FDD8E2800704919 /* Highlights.json */; };
@@ -62,6 +66,10 @@
 		A1A9759390649558CAD5ACCA /* Pods-Fast TV Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fast TV Guide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fast TV Guide/Pods-Fast TV Guide.debug.xcconfig"; sourceTree = "<group>"; };
 		AFD693071FDF2DDF0026EE25 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		AFD6930B1FDF380C0026EE25 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
+		AFD6930F1FDFCAC60026EE25 /* ARDPrograms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ARDPrograms.json; sourceTree = "<group>"; };
+		AFD693111FDFCAFE0026EE25 /* ZDFPrograms */ = {isa = PBXFileReference; lastKnownFileType = text; path = ZDFPrograms; sourceTree = "<group>"; };
+		AFD693131FDFCB390026EE25 /* RTLPrograms */ = {isa = PBXFileReference; lastKnownFileType = text; path = RTLPrograms; sourceTree = "<group>"; };
+		AFD693151FDFCB580026EE25 /* SA1Programs */ = {isa = PBXFileReference; lastKnownFileType = text; path = SA1Programs; sourceTree = "<group>"; };
 		AFE422941FDD362900704919 /* Fast TV Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fast TV Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE422971FDD362900704919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE4229C1FDD362900704919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,7 +90,7 @@
 		AFE422D01FDD4D8B00704919 /* HighlightsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsService.swift; sourceTree = "<group>"; };
 		AFE422D21FDD4DB000704919 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		AFE422D41FDD4F3900704919 /* CategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesService.swift; sourceTree = "<group>"; };
-		AFE422D81FDD5A1D00704919 /* Programs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Programs.json; sourceTree = "<group>"; };
+		AFE422D81FDD5A1D00704919 /* ChannelsWithPrograms.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChannelsWithPrograms.json; sourceTree = "<group>"; };
 		AFE422DB1FDD5A6B00704919 /* Channels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Channels.json; sourceTree = "<group>"; };
 		AFE422DE1FDD8E2800704919 /* Highlights.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Highlights.json; sourceTree = "<group>"; };
 		AFE422E01FDD8E5500704919 /* Categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Categories.json; sourceTree = "<group>"; };
@@ -267,10 +275,14 @@
 		AFE422D71FDD59E700704919 /* Mock Data Files */ = {
 			isa = PBXGroup;
 			children = (
-				AFE422D81FDD5A1D00704919 /* Programs.json */,
+				AFE422D81FDD5A1D00704919 /* ChannelsWithPrograms.json */,
 				AFE422DB1FDD5A6B00704919 /* Channels.json */,
 				AFE422DE1FDD8E2800704919 /* Highlights.json */,
 				AFE422E01FDD8E5500704919 /* Categories.json */,
+				AFD6930F1FDFCAC60026EE25 /* ARDPrograms.json */,
+				AFD693111FDFCAFE0026EE25 /* ZDFPrograms */,
+				AFD693131FDFCB390026EE25 /* RTLPrograms */,
+				AFD693151FDFCB580026EE25 /* SA1Programs */,
 			);
 			path = "Mock Data Files";
 			sourceTree = "<group>";
@@ -383,13 +395,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE422D91FDD5A1D00704919 /* Programs.json in Resources */,
+				AFE422D91FDD5A1D00704919 /* ChannelsWithPrograms.json in Resources */,
 				AFE422A21FDD362900704919 /* LaunchScreen.storyboard in Resources */,
+				AFD693101FDFCAC60026EE25 /* ARDPrograms.json in Resources */,
 				AFE4229F1FDD362900704919 /* Assets.xcassets in Resources */,
 				AFE422DC1FDD5A6B00704919 /* Channels.json in Resources */,
 				AFE422DF1FDD8E2800704919 /* Highlights.json in Resources */,
+				AFD693141FDFCB390026EE25 /* RTLPrograms in Resources */,
 				AFE4229D1FDD362900704919 /* Main.storyboard in Resources */,
+				AFD693121FDFCAFE0026EE25 /* ZDFPrograms in Resources */,
 				AFE422E11FDD8E5500704919 /* Categories.json in Resources */,
+				AFD693161FDFCB580026EE25 /* SA1Programs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE422DA1FDD5A1E00704919 /* Programs.json in Resources */,
+				AFE422DA1FDD5A1E00704919 /* ChannelsWithPrograms.json in Resources */,
 				AFE422DD1FDD5A6B00704919 /* Channels.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
