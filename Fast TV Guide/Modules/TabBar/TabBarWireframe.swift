@@ -43,7 +43,6 @@ struct TabBarWireframe {
         let viewController = HighlightsWireframe.makeTableViewController()
         HighlightsWireframe.prepare(viewController: viewController, dataProvider: dataProvider, action: action)
         viewController.title = "Highlights"
-        viewController.view.backgroundColor = UIColor.white
         viewController.tabBarItem.image = UIImage(named: "HighlightsIcon")
         return viewController
     }
@@ -51,7 +50,7 @@ struct TabBarWireframe {
     fileprivate static func makeChannelsViewController() -> UIViewController {
         let viewController = UIViewController()
         viewController.title = "Channels"
-        viewController.view.backgroundColor = UIColor.white
+        viewController.view.backgroundColor = .white
         viewController.tabBarItem.image = UIImage(named: "ChannelsIcon")
         return viewController
     }
@@ -59,7 +58,7 @@ struct TabBarWireframe {
     fileprivate static func makeMoviesViewController() -> UIViewController {
         let viewController = UIViewController()
         viewController.title = "Movies"
-        viewController.view.backgroundColor = UIColor.white
+        viewController.view.backgroundColor = .white
         viewController.tabBarItem.image = UIImage(named: "MoviesIcon")
         return viewController
     }
@@ -67,7 +66,7 @@ struct TabBarWireframe {
     fileprivate static func makeCategoriesViewController() -> UIViewController {
         let viewController = UIViewController()
         viewController.title = "Categories"
-        viewController.view.backgroundColor = UIColor.white
+        viewController.view.backgroundColor = .white
         viewController.tabBarItem.image = UIImage(named: "CategoriesIcon")
         return viewController
     }

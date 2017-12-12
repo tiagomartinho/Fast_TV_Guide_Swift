@@ -12,7 +12,7 @@ struct ProgramWireframe {
     
     static func makeViewController() -> UINavigationController {
         let moduleName = "Program"
-        let storyboard = UIStoryboard.init(name: moduleName, bundle: nil)
+        let storyboard = UIStoryboard(name: moduleName, bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: moduleName) as! UINavigationController
     }
     

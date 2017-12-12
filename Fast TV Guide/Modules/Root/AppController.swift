@@ -31,12 +31,11 @@ class AppController {
     func currentNavigationController() -> UINavigationController {
         let currentViewController = window.rootViewController
 
-        if currentViewController is UITabBarController {
-            let tabBarController = currentViewController as! UITabBarController
+        if let tabBarController = currentViewController as? UITabBarController {
             let selectedIndex = tabBarController.selectedIndex
             return tabBarController.viewControllers![selectedIndex] as! UINavigationController
         }
         
-        return fatalError()
+        return UINavigationController()
     }
 }
