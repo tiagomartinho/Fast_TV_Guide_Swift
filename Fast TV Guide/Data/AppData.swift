@@ -12,5 +12,6 @@ class AppData {
     var channels: [Channel] = []
     var channelsWithPrograms: [String : [Program]] = [:]
     var highlightIdentifiers: [String] = []
+    var highlights: [Program] = []
     var categories: [String] = []
 }

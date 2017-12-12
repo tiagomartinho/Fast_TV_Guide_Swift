@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol HighlightsDataProvider {
+    func highlights() -> [Program]
+}
+
 class DataProvider {
     fileprivate let appData: AppData
     
@@ -20,16 +24,23 @@ class DataProvider {
         appData.highlightIdentifiers = HighlightsService.load()
         appData.categories = CategoriesService.load()
         appData.channelsWithPrograms = ProgramsService.load(channelIds:channelIds())
+        
+        prepareHighlights()
     }
     
-    func highlights() -> [Program] {
+    func prepareHighlights() {
+        appData.highlights = processHighlightIdentifiers(
+            channelsWithPrograms: appData.channelsWithPrograms,
+            identifiers: appData.highlightIdentifiers)
+    }
+    
+    func processHighlightIdentifiers(channelsWithPrograms: [String : [Program]], identifiers: [String]) -> [Program] {
         // Parse through the data for the ids.
         
         var programHighlights: [Program] = []
-        for (_, programs) in appData.channelsWithPrograms {
-            programHighlights.append(contentsOf: filter(identifiers: appData.highlightIdentifiers, programs: programs))
+        for (_, programs) in channelsWithPrograms {
+            programHighlights.append(contentsOf: filter(identifiers: identifiers, programs: programs))
         }
-        
         return programHighlights
     }
     
@@ -51,5 +62,11 @@ class DataProvider {
             channelIds.append(channel.identifier)
         }
         return channelIds
+    }
+}
+
+extension DataProvider: HighlightsDataProvider {
+    func highlights() -> [Program] {
+        return appData.highlights
     }
 }
