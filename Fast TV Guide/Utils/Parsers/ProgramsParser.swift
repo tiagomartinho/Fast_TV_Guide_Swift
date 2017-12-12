@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ObjectMapper
 
 typealias ChannelPrograms = [String:[Program]]
 
