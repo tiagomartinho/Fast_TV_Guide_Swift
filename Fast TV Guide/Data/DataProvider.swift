@@ -13,14 +13,13 @@ class DataProvider {
     
     init(appData: AppData) {
         self.appData = appData
-        // load()
     }
     
     func load() {
-        appData.channelsWithPrograms = ProgramsService.load()
         appData.channels = ChannelsService.load()
         appData.highlightIdentifiers = HighlightsService.load()
         appData.categories = CategoriesService.load()
+        appData.channelsWithPrograms = ProgramsService.load(channelIds:channelIds())
     }
     
     func highlights() -> [Program] {
@@ -44,5 +43,13 @@ class DataProvider {
         }
         
         return matchedPrograms
+    }
+    
+    func channelIds() -> [String] {
+        var channelIds: [String] = []
+        for channel in appData.channels {
+            channelIds.append(channel.identifier)
+        }
+        return channelIds
     }
 }
