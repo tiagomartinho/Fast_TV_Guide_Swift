@@ -16,7 +16,7 @@ struct HighlightsWireframe {
         return navigationController
     }
     
-    static func prepare(viewController: UIViewController, action: Actionable) {
+    static func prepare(viewController: UIViewController, dataProvider: DataProvider, action: Actionable) {
         
     }
 }
