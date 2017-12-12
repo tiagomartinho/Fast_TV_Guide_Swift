@@ -124,7 +124,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d9X-5U-Gkf"/>
                     </view>
-                    <navigationItem key="navigationItem" id="DuH-JV-FQK"/>
+                    <navigationItem key="navigationItem" id="DuH-JV-FQK">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="LEn-LD-f5U">
+                            <connections>
+                                <action selector="closeButtonAction" destination="Nin-UW-Foi" id="83c-Qr-fa3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="subTitleLabel" destination="6nz-fa-K02" id="jkx-L9-t0H"/>
                         <outlet property="titleLabel" destination="l6h-Wc-a6t" id="4z6-ZK-2w4"/>

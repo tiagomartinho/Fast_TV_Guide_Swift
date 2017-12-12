@@ -17,4 +17,8 @@ class ProgramViewController: UIViewController {
     override func viewDidLoad() {
         presenter.viewDidLoad()
     }
+    
+    @IBAction func closeButtonAction() {
+        presenter.dismiss()
+    }
 }
