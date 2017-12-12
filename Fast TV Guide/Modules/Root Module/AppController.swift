@@ -11,13 +11,16 @@ import UIKit
 
 class AppController {
     let appData = AppData()
+    let dataProvider: DataProvider
     let window: UIWindow
     
     init(window: UIWindow) {
         self.window = window
+        dataProvider = DataProvider(appData: appData)
     }
     
     func start() {
+        dataProvider.load()
         showTabbarScene()
     }
     
