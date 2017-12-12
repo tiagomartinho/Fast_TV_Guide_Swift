@@ -10,6 +10,10 @@ import Foundation
 
 struct MockData {
     
+    static func loadPrograms(channelId: String) throws -> Data? {
+        return try load(name:channelId + "Programs")
+    }
+    
     static func load(name: String) throws -> Data? {
         let bundle = Bundle.main
         

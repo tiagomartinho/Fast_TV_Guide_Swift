@@ -11,6 +11,8 @@ import XCTest
 @testable import Fast_TV_Guide
 
 class ProgramsServiceTests: XCTestCase {
+    let channelId = "ARD"
+    let numberOfProgrmas = 44
     
     override func setUp() {
         super.setUp()
@@ -23,26 +25,22 @@ class ProgramsServiceTests: XCTestCase {
     }
     
     func testLoadPrograms() {
-        let data = try! MockData.load(name: "Programs")
+        let data = try! MockData.loadPrograms(channelId: channelId)
         XCTAssertNotNil(data)
         
         let parser = ProgramsParser()
-        let channelsWithPrograms: [String: [Program]] = parser.parse(data: data!)
-        XCTAssertNotNil(channelsWithPrograms)
-        
-        // We should have programs for ARD,
-        let programs = channelsWithPrograms["ARD"]
+        let programs: [Program] = parser.parse(data: data!)
         XCTAssertNotNil(programs)
-        XCTAssertTrue(programs?.count == 44)
+        XCTAssertTrue(programs.count == numberOfProgrmas)
     }
     
     func testProgramsService() {
-        let channelsWithPrograms: [String:[Program]] = ProgramsService.load()
+        let channelsWithPrograms: [String:[Program]] = ProgramsService.load(channelIds: [channelId])
         XCTAssertNotNil(channelsWithPrograms)
         
         // We should have programs for ARD,
-        let programs = channelsWithPrograms["ARD"]
+        let programs = channelsWithPrograms[channelId]
         XCTAssertNotNil(programs)
-        XCTAssertTrue(programs?.count == 44)
+        XCTAssertTrue(programs?.count == numberOfProgrmas)
     }
 }
