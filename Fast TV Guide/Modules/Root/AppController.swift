@@ -37,6 +37,6 @@ class AppController {
             return tabBarController.viewControllers![selectedIndex] as! UINavigationController
         }
         
-        return UINavigationController()
+        return fatalError()
     }
 }

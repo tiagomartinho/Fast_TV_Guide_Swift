@@ -152,7 +152,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		AFD693171FE01D540026EE25 /* Program Module */ = {
+		AFD693171FE01D540026EE25 /* Program */ = {
 			isa = PBXGroup;
 			children = (
 				AFD693181FE01D7A0026EE25 /* Program.storyboard */,
@@ -160,7 +160,7 @@
 				AFD6931C1FE021120026EE25 /* ProgramViewController.swift */,
 				AFD6931E1FE021430026EE25 /* ProgramPresenter.swift */,
 			);
-			path = "Program Module";
+			path = Program;
 			sourceTree = "<group>";
 		};
 		AFE4228B1FDD362900704919 = {
@@ -210,21 +210,21 @@
 			path = "Fast TV GuideTests";
 			sourceTree = "<group>";
 		};
-		AFE422B71FDD465400704919 /* Root Module */ = {
+		AFE422B71FDD465400704919 /* Root */ = {
 			isa = PBXGroup;
 			children = (
 				AFE422B91FDD467200704919 /* AppController.swift */,
 			);
-			path = "Root Module";
+			path = Root;
 			sourceTree = "<group>";
 		};
 		AFE422B81FDD465E00704919 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				AFD693171FE01D540026EE25 /* Program Module */,
-				AFE422F31FDDF0F100704919 /* Highlights Module */,
-				AFE422CD1FDD4C1700704919 /* TabBar Module */,
-				AFE422B71FDD465400704919 /* Root Module */,
+				AFD693171FE01D540026EE25 /* Program */,
+				AFE422F31FDDF0F100704919 /* Highlights */,
+				AFE422CD1FDD4C1700704919 /* TabBar */,
+				AFE422B71FDD465400704919 /* Root */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -269,12 +269,12 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		AFE422CD1FDD4C1700704919 /* TabBar Module */ = {
+		AFE422CD1FDD4C1700704919 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				AFE422CE1FDD4C8E00704919 /* TabBarWireframe.swift */,
 			);
-			path = "TabBar Module";
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		AFE422D61FDD590A00704919 /* Supporting Files */ = {
@@ -314,7 +314,7 @@
 			path = Parsers;
 			sourceTree = "<group>";
 		};
-		AFE422F31FDDF0F100704919 /* Highlights Module */ = {
+		AFE422F31FDDF0F100704919 /* Highlights */ = {
 			isa = PBXGroup;
 			children = (
 				AFE422F41FDDF10400704919 /* HighlightsWireframe.swift */,
@@ -324,7 +324,7 @@
 				AFE422FC1FDE686D00704919 /* HighlightsTableViewDelegate.swift */,
 				AFE422FE1FDE688400704919 /* HighlightsActionable.swift */,
 			);
-			path = "Highlights Module";
+			path = Highlights;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
