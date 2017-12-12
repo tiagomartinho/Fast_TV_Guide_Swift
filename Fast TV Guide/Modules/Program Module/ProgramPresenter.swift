@@ -23,11 +23,18 @@ class ProgramPresenter {
         viewController.channelLabel.text = program.channelIdentifier
         viewController.categoryLabel.text = program.category
         viewController.genreLabel.text = program.genre
-        
-        // let startTime = program.start
-        
         viewController.durationLabel.text = String(describing: program.minutes)
-        viewController.startTimeLabel.text = "12:30 AM"
+        
+        let startTime =  Date(timeIntervalSince1970: program.start)
+        let formattedDate = format(date: startTime)
+        
+        viewController.startTimeLabel.text = formattedDate
+    }
+    
+    func format(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm a"
+        return dateFormatter.string(from:date)
     }
     
     func dismiss() {
