@@ -11,6 +11,7 @@ import XCTest
 @testable import Fast_TV_Guide
 
 class ChannelsServiceTests: XCTestCase {
+    let numberOfChannels = 4 // Should be 4 in the mock data file.
     
     override func setUp() {
         super.setUp()
@@ -25,6 +26,6 @@ class ChannelsServiceTests: XCTestCase {
     func testChannelsService() {
         let channels: [Channel] = ChannelsService.load()
         XCTAssertNotNil(channels)
-        XCTAssertTrue(channels.count == 4, "Number of channels should be 4")
+        XCTAssertTrue(channels.count == numberOfChannels, "Number of channels should be 4")
     }
 }

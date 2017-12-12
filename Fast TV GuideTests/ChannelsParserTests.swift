@@ -11,6 +11,7 @@ import XCTest
 @testable import Fast_TV_Guide
 
 class ChannelsParserTests: XCTestCase {
+    let numberOfChannels = 4 // Should be 4 in the mock data file.
     
     override func setUp() {
         super.setUp()
@@ -23,13 +24,12 @@ class ChannelsParserTests: XCTestCase {
     }
     
     func testParse() {
-        let numberOfChannels = 4 // Should be 4 in the mock data file.
         let data = try! MockData.load(name: "Channels")
         XCTAssertNotNil(data)
         
         let parser = ChannelsParser()
         let channels = parser.parse(data: data!)
-        XCTAssert(channels.count == numberOfChannels)
+        XCTAssert(channels.count == numberOfChannels, "Number of channels should be 4")
     }
 
 }

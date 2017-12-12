@@ -31,9 +31,9 @@ class ProgramsServiceTests: XCTestCase {
         let parser = ProgramsParser()
         let programs: [Program] = parser.parse(data: data!)
         XCTAssertNotNil(programs)
-        XCTAssertTrue(programs.count == numberOfProgrmas)
+        XCTAssertTrue(programs.count == numberOfProgrmas, "Number of programs should = 44")
     }
-    
+        
     func testProgramsService() {
         let channelsWithPrograms: [String:[Program]] = ProgramsService.load(channelIds: [channelId])
         XCTAssertNotNil(channelsWithPrograms)
@@ -41,6 +41,6 @@ class ProgramsServiceTests: XCTestCase {
         // We should have programs for ARD,
         let programs = channelsWithPrograms[channelId]
         XCTAssertNotNil(programs)
-        XCTAssertTrue(programs?.count == numberOfProgrmas)
+        XCTAssertTrue(programs?.count == numberOfProgrmas, "Number of programs should = 44")
     }
 }

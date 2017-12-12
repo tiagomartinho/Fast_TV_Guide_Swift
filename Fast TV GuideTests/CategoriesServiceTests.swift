@@ -11,6 +11,7 @@ import XCTest
 @testable import Fast_TV_Guide
 
 class CategoriesServiceTests: XCTestCase {
+    let numberOfCategories = 6
     
     override func setUp() {
         super.setUp()
@@ -25,6 +26,6 @@ class CategoriesServiceTests: XCTestCase {
     func testCategoriesService() {
         let categories: [String] = CategoriesService.load()
         XCTAssertNotNil(categories)
-        XCTAssertTrue(categories.count == 6)
+        XCTAssertTrue(categories.count == numberOfCategories, "Number of categories should = 6")
     }
 }

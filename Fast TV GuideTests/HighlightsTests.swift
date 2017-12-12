@@ -11,6 +11,7 @@ import XCTest
 @testable import Fast_TV_Guide
 
 class HighlightsTests: XCTestCase {
+    let numberOfHighlights = 7
     
     override func setUp() {
         super.setUp()
@@ -27,12 +28,12 @@ class HighlightsTests: XCTestCase {
         XCTAssertNotNil(data)
         let highlights = try! JSONSerialization.jsonObject(with: data!, options: []) as! [String]
         XCTAssertNotNil(highlights)
-        XCTAssertTrue(highlights.count == 7)
+        XCTAssertTrue(highlights.count == numberOfHighlights, "Number of channels should be 7")
     }
     
     func testHighlightsService() {
         let highlights: [String] = HighlightsService.load()
         XCTAssertNotNil(highlights)
-        XCTAssertTrue(highlights.count == 7)
+        XCTAssertTrue(highlights.count == numberOfHighlights, "Number of channels should be 7")
     }
 }
