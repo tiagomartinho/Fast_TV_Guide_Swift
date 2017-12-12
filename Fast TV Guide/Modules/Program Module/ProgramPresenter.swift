@@ -18,6 +18,9 @@ class ProgramPresenter {
     
     func viewDidLoad() {
         // set all the data in the view.
+        
+        viewController.titleLabel.text = program.title
+        viewController.subTitleLabel.text = program.subTitle
     }
     
     func dismiss() {
