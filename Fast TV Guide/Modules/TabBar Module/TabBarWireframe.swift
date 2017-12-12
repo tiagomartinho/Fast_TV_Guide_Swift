@@ -13,9 +13,7 @@ struct TabBarWireframe {
     static func makeTabBarController(appController: AppController) -> UITabBarController {
         let tabBarController = UITabBarController()
         
-        let highlightsActionable = appController as HighlightsActionable
-        let highlightsDataProvider = appController.dataProvider as HighlightsDataProvider
-        let highlightsNavigationController = makeHighlightsViewController(dataProvider: highlightsDataProvider, action: highlightsActionable)
+        let highlightsNavigationController = makeHighlightsNavigationController(appController: appController)
         let channelsNavigationController = makeNavigationController(viewController: makeChannelsViewController())
         let moviesNavigationController = makeNavigationController(viewController: makeMoviesViewController())
         let categoriesNavigationController = makeNavigationController(viewController: makeCategoriesViewController())
@@ -23,6 +21,13 @@ struct TabBarWireframe {
         tabBarController.viewControllers = [highlightsNavigationController,
         channelsNavigationController, moviesNavigationController, categoriesNavigationController]
         return tabBarController
+    }
+    
+    fileprivate static func makeHighlightsNavigationController(appController: AppController)  -> UINavigationController {
+        let highlightsActionable = appController as HighlightsActionable
+        let highlightsDataProvider = appController.dataProvider as HighlightsDataProvider
+        let highlightsViewController = makeHighlightsViewController(dataProvider: highlightsDataProvider, action: highlightsActionable)
+        return makeNavigationController(viewController: highlightsViewController)
     }
     
     fileprivate static func makeNavigationController(viewController: UIViewController) -> UINavigationController {
