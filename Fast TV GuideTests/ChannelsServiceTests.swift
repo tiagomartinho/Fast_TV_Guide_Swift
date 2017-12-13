@@ -24,7 +24,7 @@ class ChannelsServiceTests: XCTestCase {
     }
     
     func testChannelsService() {
-        let channels: [Channel] = ChannelsService.load()
+        let channels: [Channel] = ChannelsService().load()
         XCTAssertNotNil(channels)
         XCTAssertTrue(channels.count == numberOfChannels, "Number of channels should be 4")
     }

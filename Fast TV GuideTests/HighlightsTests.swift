@@ -32,7 +32,7 @@ class HighlightsTests: XCTestCase {
     }
     
     func testHighlightsService() {
-        let highlights: [String] = HighlightsService.load()
+        let highlights: [String] = HighlightsService().load()
         XCTAssertNotNil(highlights)
         XCTAssertTrue(highlights.count == numberOfHighlights, "Number of channels should be 7")
     }

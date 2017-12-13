@@ -24,7 +24,7 @@ class CategoriesServiceTests: XCTestCase {
     }
     
     func testCategoriesService() {
-        let categories: [String] = CategoriesService.load()
+        let categories: [String] = CategoriesService().load()
         XCTAssertNotNil(categories)
         XCTAssertTrue(categories.count == numberOfCategories, "Number of categories should = 6")
     }

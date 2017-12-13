@@ -9,5 +9,5 @@
 import Foundation
 
 protocol Service {
-    static func load<T>() -> [T]
+    func load<T>() -> [T]
 }

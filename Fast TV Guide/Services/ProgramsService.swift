@@ -11,7 +11,7 @@ import Foundation
 typealias ChannelsWithPrograms = [String:[Program]]
 
 class ProgramsService {
-    static func load<ChannelsWithPrograms>(channelIds: [String]) -> ChannelsWithPrograms {
+    func load<ChannelsWithPrograms>(channelIds: [String]) -> ChannelsWithPrograms {
         var channelsWithPrograms = [String:[Program]]()
         
         for channelId in channelIds {
@@ -22,7 +22,7 @@ class ProgramsService {
         return channelsWithPrograms as! ChannelsWithPrograms
     }
     
-    fileprivate static func load(channelId: String) -> [Program] {
+    fileprivate func load(channelId: String) -> [Program] {
         let data = try! MockData.loadPrograms(channelId: channelId)
         let parser = ProgramsParser()
         let programs: [Program] = parser.parse(data: data!)

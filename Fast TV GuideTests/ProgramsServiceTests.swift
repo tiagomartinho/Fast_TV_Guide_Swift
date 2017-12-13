@@ -33,9 +33,9 @@ class ProgramsServiceTests: XCTestCase {
         XCTAssertNotNil(programs)
         XCTAssertTrue(programs.count == numberOfProgrmas, "Number of programs should = 44")
     }
-        
+    
     func testProgramsService() {
-        let channelsWithPrograms: [String:[Program]] = ProgramsService.load(channelIds: [channelId])
+        let channelsWithPrograms: [String:[Program]] = ProgramsService().load(channelIds: [channelId])
         XCTAssertNotNil(channelsWithPrograms)
         
         // We should have programs for ARD,

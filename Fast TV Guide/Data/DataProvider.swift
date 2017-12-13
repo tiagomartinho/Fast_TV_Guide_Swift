@@ -14,22 +14,27 @@ protocol HighlightsDataProvider {
 
 class DataProvider {
     fileprivate let appData: AppData
+    fileprivate let serviceProvider: ServiceProvider
     
-    init(appData: AppData) {
+    init(appData: AppData, serviceProvider: ServiceProvider) {
         self.appData = appData
+        self.serviceProvider = serviceProvider
     }
     
     func load() {
-        appData.channels = ChannelsService.load()
-        appData.highlightIdentifiers = HighlightsService.load()
-        appData.categories = CategoriesService.load()
-        appData.channelsWithPrograms = ProgramsService.load(channelIds:channelIds())
+        appData.channels = serviceProvider.makeChannelsService().load()
+        appData.highlightIdentifiers = serviceProvider.makeHighlightsService().load()
+        appData.categories = serviceProvider.makeCategoriesService().load()
+        appData.channelsWithPrograms = serviceProvider.makeProgramsSevice().load(channelIds: channelIds())
+        
+        // appData.channelsWithPrograms = ProgramsService.load(channelIds:channelIds())
         
         prepareHighlights()
     }
     
     func prepareHighlights() {
-        appData.highlights = processHighlightIdentifiers(
+        appData.highlights =
+            processHighlightIdentifiers(
             channelsWithPrograms: appData.channelsWithPrograms,
             identifiers: appData.highlightIdentifiers)
     }

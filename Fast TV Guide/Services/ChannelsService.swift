@@ -9,7 +9,7 @@
 import Foundation
 
 class ChannelsService: Service {
-    static func load<Channel>() -> [Channel] {
+    func load<Channel>() -> [Channel] {
         let data = try! MockData.load(name: "Channels")
         let parser = ChannelsParser()
         let channels = parser.parse(data: data!) as! [Channel]

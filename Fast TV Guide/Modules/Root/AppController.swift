@@ -16,7 +16,7 @@ class AppController {
     
     init(window: UIWindow) {
         self.window = window
-        dataProvider = DataProvider(appData: appData)
+        dataProvider = DataProvider(appData: appData, serviceProvider: ServiceProvider())
     }
     
     func start() {

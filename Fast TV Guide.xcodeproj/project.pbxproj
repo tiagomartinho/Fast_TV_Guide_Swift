@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF60096C1FE13022008A48CD /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60096B1FE13022008A48CD /* ServiceProvider.swift */; };
 		AFD693081FDF2DDF0026EE25 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD693071FDF2DDF0026EE25 /* Presenter.swift */; };
 		AFD6930C1FDF380C0026EE25 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6930B1FDF380C0026EE25 /* DataProviderTests.swift */; };
 		AFD693101FDFCAC60026EE25 /* ARDPrograms.json in Resources */ = {isa = PBXBuildFile; fileRef = AFD6930F1FDFCAC60026EE25 /* ARDPrograms.json */; };
@@ -67,6 +68,7 @@
 /* Begin PBXFileReference section */
 		45AEA6A87452F442650D0F12 /* Pods_Fast_TV_Guide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fast_TV_Guide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A9759390649558CAD5ACCA /* Pods-Fast TV Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fast TV Guide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fast TV Guide/Pods-Fast TV Guide.debug.xcconfig"; sourceTree = "<group>"; };
+		AF60096B1FE13022008A48CD /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		AFD693071FDF2DDF0026EE25 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		AFD6930B1FDF380C0026EE25 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
 		AFD6930F1FDFCAC60026EE25 /* ARDPrograms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ARDPrograms.json; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 		AFE422C51FDD478000704919 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AF60096B1FE13022008A48CD /* ServiceProvider.swift */,
 				AFE422D21FDD4DB000704919 /* Service.swift */,
 				AFE422C81FDD47B000704919 /* ProgramsService.swift */,
 				AFE422C61FDD479700704919 /* ChannelsService.swift */,
@@ -451,6 +454,7 @@
 				AFE422C21FDD46C800704919 /* Channel.swift in Sources */,
 				AFE422981FDD362900704919 /* AppDelegate.swift in Sources */,
 				AFD6931B1FE020750026EE25 /* ProgramWireframe.swift in Sources */,
+				AF60096C1FE13022008A48CD /* ServiceProvider.swift in Sources */,
 				AFE422F91FDE684200704919 /* HighlightsTableViewController.swift in Sources */,
 				AFE422CC1FDD480400704919 /* MockData.swift in Sources */,
 				AFE422C01FDD469400704919 /* DataProvider.swift in Sources */,

@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct HighlightsService: Service {
-    static func load<String>() -> [String] {
+class HighlightsService: Service {
+    func load<String>() -> [String] {
         let data = try! MockData.load(name: "Highlights")
         let highlights = try! JSONSerialization.jsonObject(with: data!, options: []) as! [String]
         return highlights

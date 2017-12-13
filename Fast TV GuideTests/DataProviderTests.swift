@@ -23,7 +23,26 @@ class DataProviderTests: XCTestCase {
     }
     
     func testFilterWith2Items() {
-        // let program = Program.init(map: <#T##Map#>)
+        let appData = AppData()
+        let serviceProvider = MockServiceProvider()
+        let dataProvider = DataProvider(appData: appData, serviceProvider: serviceProvider)
         
+        XCTAssertNotNil(dataProvider)
     }
 }
+
+class ChannelsMockService: ChannelsService {
+    override func load<Channel>() -> [Channel] {
+        let data = try! MockData.load(name: "Channels")
+        let parser = ChannelsParser()
+        let channels = parser.parse(data: data!) as! [Channel]
+        return channels
+    }
+}
+
+class MockServiceProvider: ServiceProvider {
+    override func makeChannelsService() -> ChannelsService {
+        return ChannelsMockService()
+    }
+}
+
